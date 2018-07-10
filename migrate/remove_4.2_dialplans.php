@@ -24,7 +24,7 @@ catch (PDOException $error) {
 foreach ($dialplans_to_delete as $dialplan_name) {
     // Here we will get all dialplan_uuid for every domain
     $sql = "SELECT dialplan_uuid FROM v_dialplans WHERE dialplan_name = '$dialplan_name'";
-    $prep_statement = $db->prepare(check_sql($sql));
+    $prep_statement = $db->prepare($sql);
 	$prep_statement->execute();
     $result = $prep_statement->fetchAll();
     var_dump($result);
