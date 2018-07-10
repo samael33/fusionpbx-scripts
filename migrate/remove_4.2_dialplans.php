@@ -1,9 +1,22 @@
 <?php
 
-$execute_sql = false;
 $config_path = '/etc/fusionpbx/';
 
 $dialplans_to_delete = ['user_exists', 'user_record', 'call_forward_all', 'local_extension'];
+
+function remove_dialplan_details($db, $dialplan_uuid) {
+    $sql = "DELETE FROM v_dialplan_details ";
+    $sql .= "WHERE dialplan_uuid = '".$dialplan_uuid."' ";
+    //$db->exec($sql);
+    print($sql."\n");
+}
+function remove_dialplan($db, $dialplan_uuid) {
+    $sql = "DELETE FROM v_dialplans ";
+    $sql .= "WHERE dialplan_uuid = '".$dialplan_uuid."' ";
+    //$db->exec($sql);
+    print($sql."\n");
+}
+
 
 require_once $config_path . "config.php";
 
@@ -26,8 +39,11 @@ foreach ($dialplans_to_delete as $dialplan_name) {
     $sql = "SELECT dialplan_uuid FROM v_dialplans WHERE dialplan_name = '$dialplan_name'";
     $prep_statement = $db->prepare($sql);
 	$prep_statement->execute();
-    $result = $prep_statement->fetchAll();
-    var_dump($result);
+    $uuid_list = $prep_statement->fetchAll();
+    foreach ($uuid_list as $uuid) {
+        remove_dialplan_details($db, $uuid);
+        remove_dialplan($db, $uuid);
+    }
 }
 
 ?>
