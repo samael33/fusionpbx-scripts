@@ -16,6 +16,13 @@ function remove_dialplan($db, $dialplan_uuid) {
     //$db->exec($sql);
     print($sql."\n");
 }
+function check_name($db, $dialplan_uuid) {
+    $sql = "SELECT dialplan_name FROM v_dialplans";
+    $sql .= " WHERE dialplan_uuid = '$dialplan_uuid'";
+    $prep_statement = $db->prepare($sql);
+	$prep_statement->execute();
+    var_dump($prep_statement->fetchAll());
+}
 
 
 require_once $config_path . "config.php";
@@ -41,8 +48,9 @@ foreach ($dialplans_to_delete as $dialplan_name) {
 	$prep_statement->execute();
     $uuid_list = $prep_statement->fetchAll();
     foreach ($uuid_list as $uuid) {
-        remove_dialplan_details($db, $uuid);
-        remove_dialplan($db, $uuid);
+        check_name($db, $uuid['dialplan_uuid']);
+        //remove_dialplan_details($db, $uuid['dialplan_uuid']);
+        //remove_dialplan($db, $uuid['dialplan_uuid']);
     }
 }
 
