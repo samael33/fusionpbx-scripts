@@ -1,0 +1,547 @@
+﻿default_setting_uuid;app_uuid;default_setting_category;default_setting_subcategory;default_setting_name;default_setting_value;default_setting_order;default_setting_enabled;default_setting_description
+8ebeb864-f03e-406c-b82f-6eb47cb1bd39;95788e50-9500-079e-2807-fd530b0ea370;limit;call_center_queues;numeric;3;;false;""
+b32179ad-96a4-4d83-8677-1fd8fc5ef6df;95788e50-9500-079e-2807-fd530b0ea370;call_center;agent_add_rows;numeric;5;;true;""
+533eac69-887f-47aa-bf27-0751797555f5;95788e50-9500-079e-2807-fd530b0ea370;call_center;agent_edit_rows;numeric;1;;true;""
+4fedc226-caca-4ebf-b4eb-31de93e5bed3;19806921-e8ed-dcff-b325-dd3e5da4959d;follow_me;max_destinations;numeric;5;;false;Set the maximum number of Follow Me Destinations.
+ce105d64-2d1b-4d19-ae34-ccb818cc9c6e;19806921-e8ed-dcff-b325-dd3e5da4959d;follow_me;timeout;numeric;30;;false;Set the default Follow Me Timeout value.
+70d8538a-89ab-4db6-87b1-f5e447680283;5ec89622-b19c-3559-64f0-afde802ab139;limit;destinations;numeric;3;;false;""
+911412de-e0a6-49db-a3c8-65f05c9d847f;5ec89622-b19c-3559-64f0-afde802ab139;destinations;dialplan_details;boolean;true;;true;""
+e05a4745-ea59-47a7-8e7f-5db7d2a5c273;4efa1a1a-32e7-bf83-534b-6c8299958a8e;limit;devices;numeric;3;;false;""
+8701cdca-64a1-4ff4-85a1-a09b1389ce92;17e628ee-ccfa-49c0-29ca-9894a0384b9b;editor;indent_guides;boolean;false;;false;Set the default visibility of indent guides for Editor.
+5669f8cf-f0a0-4d9c-ad75-caf239e9f5cd;17e628ee-ccfa-49c0-29ca-9894a0384b9b;editor;invisibles;boolean;false;;false;Set the default state of invisible characters for Editor.
+7122cb30-d557-4001-af94-d8d21f964a63;17e628ee-ccfa-49c0-29ca-9894a0384b9b;editor;line_numbers;boolean;false;;false;Set the default visibility of line numbers for Editor.
+7b403afd-e4d6-4e96-8c8f-2cf5d6187191;17e628ee-ccfa-49c0-29ca-9894a0384b9b;editor;theme;text;Cobalt;;false;Set the default theme.
+db3290e5-d3fb-4bcd-b2a8-a0061aa02532;e68d9689-2769-e013-28fa-6214bf47fca3;domain;dial_string;text;"{sip_invite_domain=${domain_name},leg_timeout=${call_timeout},presence_id=${dialed_user}@${dialed_domain}}${sofia_contact(*/${dialed_user}@${dialed_domain})}";;false;""
+3eeb3757-f7bb-437a-9021-8ccf3f27c98b;e68d9689-2769-e013-28fa-6214bf47fca3;limit;extensions;numeric;3;;false;""
+bc2fe268-a8a8-4a92-8096-86ab3c55a644;c4e85f9c-f7df-47b4-921e-de0ff356eee4;provision;fanvil_time_zone;text;-20;;true;Time zone ranges
+6de1ba1c-605c-457e-bff6-140d5f7fdc5f;c4e85f9c-f7df-47b4-921e-de0ff356eee4;provision;fanvil_time_zone_name;text;UTC-5;;true;Time zone name example United States-Eastern Time
+54280025-2cc0-429a-b2f4-5e8e2426ed33;c4e85f9c-f7df-47b4-921e-de0ff356eee4;provision;fanvil_location;numeric;4;;true;Used with time zone and time zone name
+abe840e9-534c-4dc5-8533-464d1cb02557;c4e85f9c-f7df-47b4-921e-de0ff356eee4;provision;fanvil_realm;text;enter a value;;false;enter a value
+9d7a9b40-a01c-4687-aa25-74d92350628a;c4e85f9c-f7df-47b4-921e-de0ff356eee4;provision;fanvil_greeting;text;FusionPBX;;true;Name at top left of screen 0~12 characters
+1c160cbf-6e6c-496f-8b3f-b066decc3b1e;c4e85f9c-f7df-47b4-921e-de0ff356eee4;provision;fanvil_date_display;numeric;3;;true;value 0-13 Date Format
+d2eab7fd-0d20-4e71-ab91-7554243c9807;c4e85f9c-f7df-47b4-921e-de0ff356eee4;provision;fanvil_time_display;numeric;1;;true;1=12hr 0=24hr
+d71d655f-0f07-45b7-ae7a-8d0f6673d98d;c4e85f9c-f7df-47b4-921e-de0ff356eee4;provision;fanvil_wifi_enable;numeric;0;;true;1=on 0=off
+8ab03ac3-7e14-4f9b-9532-5cda97f5fa6f;c4e85f9c-f7df-47b4-921e-de0ff356eee4;provision;fanvil_stun_port;numeric;3478;;true;enter a stun port number
+6840bdb0-eb9d-45bd-a79a-ccb64d08fd97;24108154-4ac3-1db6-1551-4731703a4440;fax;allowed_extension;array;.pdf;;true;""
+7031d8ec-4610-4696-b5b4-9b5f89f2bff1;24108154-4ac3-1db6-1551-4731703a4440;fax;allowed_extension;array;.tif;;true;""
+c3c4487d-62f1-48d1-9fda-048fca830fb9;24108154-4ac3-1db6-1551-4731703a4440;fax;allowed_extension;array;.tiff;;true;""
+cec88775-8aaf-4667-a04d-414b3274e545;24108154-4ac3-1db6-1551-4731703a4440;fax;cover_logo;text;"";;false;Path to image/logo file displayed in the header of the cover sheet.
+e907df99-6b3a-4864-bd11-681888f20289;24108154-4ac3-1db6-1551-4731703a4440;fax;cover_header;text;"";;false;Default information displayed beneath the logo in the header of the cover sheet.
+8338a404-3966-416e-b4f9-a1ac36c37bd1;24108154-4ac3-1db6-1551-4731703a4440;fax;page_size;text;letter;;true;Set the default page size of new faxes.
+9fd6cb5f-5824-4cbb-89b2-53066649272e;24108154-4ac3-1db6-1551-4731703a4440;fax;resolution;text;fine;;true;Set the default transmission quality of new faxes.
+63e55b19-8bf2-4aaa-b7df-a514c62ecfcc;24108154-4ac3-1db6-1551-4731703a4440;fax;variable;array;fax_enable_t38=true;;true;Enable T.38
+0f07d24a-296a-4798-8478-e6ef1a59f54f;24108154-4ac3-1db6-1551-4731703a4440;fax;variable;array;fax_enable_t38_request=false;;true;Send a T38 reinvite when a fax tone is detected.
+7681e5d8-1462-420b-9276-acf4b2156982;24108154-4ac3-1db6-1551-4731703a4440;fax;variable;array;ignore_early_media=true;;true;Ignore ringing to improve fax success rate.
+80eee263-a22c-4ec9-9df1-397908a274f6;24108154-4ac3-1db6-1551-4731703a4440;fax;keep_local;boolean;true;;true;Keep the file after sending or receiving the fax.
+63d2cb3c-708a-43c2-b233-a3f4e3367224;24108154-4ac3-1db6-1551-4731703a4440;fax;send_mode;text;queue;;false;""
+d2977fe1-ee7e-4403-b44f-8d86aeb5f310;24108154-4ac3-1db6-1551-4731703a4440;fax;send_retry_limit;numeric;5;;true;Number of attempts to send fax (count only calls with answer)
+6ca1712b-5a53-4c54-ba53-b2046c89280d;24108154-4ac3-1db6-1551-4731703a4440;fax;send_retry_interval;numeric;15;;true;Delay before we make next call after answered call
+2c5640d0-493f-4426-b76d-04e378c86d76;24108154-4ac3-1db6-1551-4731703a4440;fax;send_no_answer_retry_limit;numeric;3;;true;Number of unanswered attempts in sequence
+03820df1-f242-4358-950f-ede87f502e9a;24108154-4ac3-1db6-1551-4731703a4440;fax;send_no_answer_retry_interval;numeric;30;;true;Delay before we make next call after no answered call
+9ed2e73c-6b82-4a79-83db-b7588f78c675;24108154-4ac3-1db6-1551-4731703a4440;fax;send_no_answer_limit;numeric;3;;true;Giveup reach the destination after this number of sequences
+c97457b7-da9a-44a6-a4a4-442dbf5fa4fa;24108154-4ac3-1db6-1551-4731703a4440;fax;send_no_answer_interval;numeric;300;;true;Delay before next call sequence
+325e3b06-1199-40e0-8703-8adf7efd9f4f;24108154-4ac3-1db6-1551-4731703a4440;fax;storage_type;text;base64;;false;Store FAX in base64.
+762717f6-743d-428f-b345-33b9d84ff099;24108154-4ac3-1db6-1551-4731703a4440;fax;smtp_from;text;"";;true;""
+03c6ea15-a0b8-4164-9026-47595981477b;24108154-4ac3-1db6-1551-4731703a4440;fax;smtp_from_name;text;"";;true;""
+df031ab4-087d-4e0e-92ac-e96f5d0aa55d;297ab33e-2c2f-8196-552c-f3567d2caaf8;limit;gateways;numeric;3;;false;""
+bf083e2c-ad73-48ba-a981-9e1c92b2554e;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_call_waiting;text;0;;true;Call Waiting 0=enabled 1=disable
+5f97afa2-b8ae-45fc-a47c-4131b6b4e1fd;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;contact_grandstream;boolean;true;;false;Enable Address Book for Grandstream based on users and groups assigned to contact.
+3a8841f3-e1c0-4eb1-abd3-068a3e3701a5;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_gxp_time_zone;text;auto;;true;See provision profile for codes.
+bce5c360-ec90-468b-9bed-aa5ceabfe87d;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_check_sip_user_id;text;1;;true;GXV Android phones - fix auto-ring bug.
+4965e699-65a2-4309-b30c-6c6aae9c5e60;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_config_server_path;text;none;;false;mydomain.com/app/provision to Fusionpbx provisioning. Phones will use firmware url if this is set to: none
+712daa4c-d657-4ed1-85f6-9134bef2969d;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_global_contact_groups;text;"contacts_elementary,contacts_facilities,contacts_other,contacts_secondary";;false;List of contact groups that every phone will have access to.  Namely building sites.
+daeec650-12ab-47b7-a079-d274beee66f5;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_lan_port_vlan;text;1;;false;Default VLAN for phone LAN port.
+5200174e-b644-438f-a2f8-b721ee052cea;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_pc_port_vlan;text;1;;false;Default VLAN for phone PC port.
+a3adbb11-4e9f-4a56-86f8-0fefa5fb8c1d;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_ldap_base_dn;text;"dc=mydomain,dc=com";;false;Base DN
+108f9c23-d44b-41f0-b332-ef9d586ecb8d;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_ldap_mail_attr;text;mail;;false;Mail attribute returned to phone
+a8acdbb0-98de-48d6-9d6d-1f7961a50a6b;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_ldap_mail_filter;text;(mail=%);;false;Search filter for mail lookups
+3f1fa270-7a73-41b0-8210-8a9e9295f658;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_ldap_name_attr;text;givenName sn title mail;;false;The NAME attributes returned in the LDAP search result available to device
+72b87ed4-588c-4706-a221-e15d5fcaa79d;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_ldap_name_filter;text;(cn=%);;false;Search filter for name lookups
+902d7bd7-4040-4082-a6ab-737f5f6e76a0;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_ldap_number_attr;text;telephoneNumber mobile homePhone;;false;Number attributes returned to the phone.
+7f123561-b35f-475b-b3c7-202df5be63b6;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_ldap_number_filter;text;(|(telephoneNumber=%)(homePhone=%)(moblie=%));;false;Search filter for number lookups.
+33728232-dd89-4e30-8bc9-379891f2696b;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_ldap_password;text;super-secret;;false;Ldap bind user password.
+614745a2-2441-48f7-a62d-e0dc098c7db0;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_ldap_server;text;mydomain.com;;false;Ldap server host name
+c5d91dcd-cc74-4bc9-a3a8-e3b8ee5bd1a6;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_ldap_user_base;text;"ou=users,dc=mydomain,dc=com";;false;Ldap base for users.
+35dfa15a-1bfb-43e1-ba91-79c78dc89f04;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_ldap_username;text;"cn=pbxadmin,dc=mydomain,dc=com";;false;Ldap server bind username
+c1411d05-8f55-4bbf-96e8-6ab8cbb77bb5;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_nat_traversal;text;0;;true;"NAT Traversal. 0 - No, 1 - STUN, 2 - keep alive, 3 - UPnP, 4 - Auto, 5 - VPN"
+f7bf7fb8-5d2a-46a8-b218-32826c29fd53;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_phonebook_download_interval;text;720;;true;"0=disabled, 5-720 minutes"
+00f51316-4405-4450-b619-12e0b2594e1a;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_qos_rtp;text;5;;false;Layer 2 QoS 802.1p Priority Value for RTP media
+4e1e89b8-f114-4580-944a-2537eebb0915;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_qos_sip;text;3;;false;Layer 2 QoS 802.1p Priority Value for SIP signaling
+be807a0d-d939-484a-b34a-5605c28b7e11;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_sip_only_known_servers;text;1;;true;GXV Android phones - fix auto-ring bug.
+40435232-cdc7-412a-8927-892f2bd44bda;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_stun_server;text;mydomain.com;;true;Bug in Grandstream where null stun_server defaults to sip server/port
+6dbe4a02-33a3-4c1d-9145-0b8d6a5b8c81;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_validate_incoming_sip;text;1;;true;GXV Android phones - fix auto-ring bug.
+0971caf6-679a-4442-a16f-e729f2f402d7;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_wallpaper_url;text;https://mydomain.com/files/wallpaper.jpg;;false;Wallpaper Image JPEG 480x272 16-bit depth dithered
+f7f352d2-a3f0-4ea3-b013-8856404b66a4;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_dial_plan;text;{x+|*x+|*++|\p\a\k\+*x+|\l\o\w\+*x+};;true;Define the digits that are allowed to be called.
+a004dee4-4621-4c6d-8c20-7f315f812d85;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_bluetooth_power;text;1;;false;"Bluetooth Power - 0 - Off, 1 - On, 2 - Off & Hide Menu From LCD"
+09d534c5-551b-47ad-86bc-c053b66679a6;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_bluetooth_handsfree;text;1;;false;"Bluetooth Handsfree - 0 - Off, 1 - On"
+453ec939-ef61-4ecd-ad0a-31905153efd8;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_auto_attended_transfer;text;1;;true;"Attended Transfer Mode. 0 - Static, 1 - Dynamic. Default is 0"
+0f1062d5-d262-4444-a8cb-a48faa4ce580;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_syslog_server;text;"";;false;"Syslog Server (name of the server, max length is 64 characters)"
+4f234e60-5653-4d4a-bac5-07135ea0549c;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_syslog_level;text;0;;false;"Syslog Level. 0 - NONE, 1 - DEBUG, 2 - INFO, 3 - WARNING, 4 - ERROR. Default is 0"
+8e42975d-fe62-4e5a-8115-5a8bdb6ae2bd;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_send_sip_log;text;0;;false;"Send SIP Log. 0 - Do not send SIP log in Syslog, 1 - Send SIP log in Syslog if configured and set to DEBUG level. Default is 0"
+7bb45800-e493-4b3d-bffe-1b401a64a9b3;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_screensaver;text;1;;true;"Screensaver. 0 - No, 1 - Yes, 2 - On if no VPK is active. Default is 1"
+eb96abe3-0225-4c75-adcf-982e7121d905;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_screensaver_source;text;0;;true;"Screensaver Source. 0 - Default, 1 - USB, 2 - Download. Default is 0. --for GXP2140/2160/2170 only"
+6be4fe78-59f1-4677-b0e1-18984682aac5;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_screensaver_show_date_time;text;1;;true;"Show Date and Time. 0 - No, 1 - Yes. Default is 1"
+55d20480-687c-45d2-b6a5-65295a908917;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_screensaver_timeout;text;5;;true;Screensaver Timeout. Minutes 3-60
+918685f9-aa99-4de7-b3b0-06aff5d69e4c;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_screensaver_server_path;text;"";;false;Screensaver Server Path
+af73fb5c-8ded-4ee0-bd11-97f14f06f3c3;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_srtp;text;0;;true;"SRTP Mode. 0 - Disabled, 1 - Enabled but not forced, 2 - Enabled and forced, 3 - Optional. Default is 0"
+5da62e0c-5eb0-11e8-9c2d-fa7ae01bbebc;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_city_code;text;"Boise,ID";;false;Enter City to configure City for the Weather app on the Phone
+52b6e1e2-5ed5-11e8-9c2d-fa7ae01bbebc;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_temp_unit;text;f;;false;c - Celsius f - Farenheit / If disabled will be set to auto
+eebecb32-7c99-4d4c-bf05-6f9ce35da6ea;acf0be2e-36b7-489e-b327-761c3071d2df;provision;htek_time_zone;text;18;;true;"Time zone 18=EST 14=CST 6=PST 9,10=MST"
+25c97d75-1e20-42ae-bb38-a6eb79e5795d;acf0be2e-36b7-489e-b327-761c3071d2df;provision;htek_dst;numeric;1;;true;DST off=0 on=1 auto=2
+6570d02b-5dbe-42c6-8bb3-b0eaf34d555e;acf0be2e-36b7-489e-b327-761c3071d2df;provision;htek_date_display_format;numeric;1;;true;Year-Month-Day=0  Month-Day-Year=1  Day-Month-Year=2
+d46268fc-622d-4ee2-8f7a-00dfb98f90b5;acf0be2e-36b7-489e-b327-761c3071d2df;provision;htek_time_format;numeric;1;;true;1=12hr 0=24hr
+ce17d7af-650a-49c0-b3e4-3bb8c1dad566;a5788e9b-58bc-bd1b-df59-fff5d51253ab;ivr_menu;option_add_rows;numeric;5;;true;""
+74376817-89de-49e1-bddd-868a8ebb49ec;a5788e9b-58bc-bd1b-df59-fff5d51253ab;ivr_menu;option_edit_rows;numeric;1;;true;""
+26984efd-2445-4ac9-b459-bb7bda4217c6;a5788e9b-58bc-bd1b-df59-fff5d51253ab;limit;ivr_menus;numeric;3;;false;""
+1752b247-873b-4d41-9846-b9df93efe8df;d4ab90f0-eeeb-454a-af1e-a6e970f31147;provision;polycom_gmt_offset;text;"";;false;3600 * GMT offset
+096ef50c-3ff4-4a1f-bc37-79876a7eb832;d4ab90f0-eeeb-454a-af1e-a6e970f31147;provision;polycom_call_waiting;text;1;;true;Call Waiting 1=enabled 0=disable
+6f3d254d-8dde-438d-b2a5-eac75d1a7db5;d4ab90f0-eeeb-454a-af1e-a6e970f31147;provision;polycom_feature_key_sync;numeric;0;;true;Feature Key Sync 1=enabled 0=disable
+931f9369-9aac-4620-8d4b-7d2bf642b1d2;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;enabled;text;true;;false;""
+3790e46b-ef9e-4cdc-bfd2-6b3708751843;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;auto_insert_enabled;boolean;true;;false;""
+27b7ccfd-58d7-409c-80ff-cca014349d70;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;http_auth_type;text;digest;;false;""
+c6a5b05b-210d-484f-bbb6-c1dd2223992e;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;http_auth_username;text;"";;false;""
+c998c762-6a43-4911-a465-a9653eeb793d;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;http_auth_disable;boolean;false;;false;""
+d376fe0f-fb89-4418-8fb4-590e4cac483f;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;cidr;array;"";;false;""
+a5323190-b733-49c1-99c4-396ab8950bb8;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;admin_name;text;"";;false;""
+ae3f809e-81af-4ed4-82f7-275251210d3a;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;admin_password;text;"";;false;""
+cd2173be-aa43-4fd2-9c75-02f49c199485;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;path;text;"";;false;""
+c104cf6e-722b-4994-8f3e-2a368aa11715;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;outbound_proxy_primary;text;"";;false;""
+ebfc19c9-cec1-4596-a0ee-582d3f4a0392;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;outbound_proxy_secondary;text;"";;false;""
+a9dc7f4a-0a19-40cb-829a-093bf81d00db;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;line_sip_port;numeric;5060;;true;""
+472300e4-267a-4f0d-83ab-04d2017c7d0f;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;line_sip_transport;text;tcp;;true;""
+17fe1190-2a81-47e1-8b56-32f6ae8093f7;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;daylight_savings_enabled;boolean;true;;true;""
+5aa7f396-d742-48f1-b53f-c609b9a6759a;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;daylight_savings_start_month;text;3;;true;""
+7d742914-9c55-4cee-a295-c19501389f41;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;daylight_savings_start_day;text;11;;true;""
+ef0ad392-8956-4355-bf44-48d8712c74c1;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;daylight_savings_start_weekday;text;7;;true;""
+7b444c2f-bed7-4da5-8cf3-4cc79df8625f;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;daylight_savings_start_time;text;2;;true;""
+6f4a9657-e130-4003-bc96-22a1312d76f4;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;daylight_savings_stop_day;text;4;;true;""
+e7942398-3d32-4a32-924f-e61bf31299fa;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;daylight_savings_stop_weekday;text;7;;true;""
+d3e72ae2-b887-443d-8523-96726343bb55;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;daylight_savings_stop_time;text;2;;true;""
+931d6cc7-ca82-4813-ae92-7015e0c2ea1b;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;http_domain_filter;boolean;true;;true;""
+6c4430f6-3713-4c8b-9da3-eaf1705d7dc3;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;contact_users;boolean;true;;false;""
+c5196771-f408-40b3-81c7-b4ce525620c3;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;contact_groups;boolean;true;;false;""
+d157078e-b363-4f34-a6d4-8a86990a40b7;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;number_as_presence_id;text;true;;true;""
+48dd60fe-d7de-417c-85c4-2d2d897a709c;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;ntp_server_primary;text;pool.ntp.org;;true;""
+7bcc3c26-ac55-4934-be9f-e0edfbc7193b;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;ntp_server_secondary;text;2.us.pool.ntp.org;;true;""
+da21eec7-699b-4a8b-a5e5-30ce118aaf8c;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;spa_time_zone;text;GMT-07:00;;true;""
+a6529f0e-9d8b-43b9-b487-db42b9b6be25;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;spa_time_format;text;12hr;;true;"12hr,24hr"
+58c764a9-4f71-4cd2-a44a-1ab52990b97f;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;spa_date_format;text;day/month;;true;""
+9c9886a0-92f6-4dd7-8c1b-d04f240d9a9b;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;spa_back_light_timer;text;30 s;;true;""
+7c7fb3c1-3796-4c5f-b090-2aec955e023b;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;spa_handle_via_rport;text;Yes;;true;""
+564c50ee-4403-4e26-a30b-637f661db389;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;spa_call_waiting;text;Yes;;true;Call Waiting Yes=enabled No=disable
+05176dde-763e-4983-b8d2-93f6bf984805;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;spa_feature_key_sync;text;No;;true;Feature Key Sync Yes=enabled No=disable
+2ce5d7a2-2a72-423f-adb4-777b1f0f8586;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;spa_dual_registration;text;No;;true;Dual Registration Yes=enabled No=disable
+6f815035-9b80-4007-8cc6-ac151727e5fb;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;spa_register_when_failover;text;No;;true;Auto register when failover Yes=enabled No=disable
+8fc369c3-bd6e-4fbb-957c-681de8a325fc;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;snom_call_waiting;text;on;;true;Call Waiting on=enabled off=disable visual only and ringer
+203711b9-1d2a-4b52-9d8c-d6f23b451d8f;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;nway_conference;text;true;;false;N-Way conferencing for devices supporting network conference uri
+b20b6547-14a8-416b-a5b1-990524a1afac;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;vtech_vlan_wan_enable;text;0;;false;Enable vlan=1
+cfa6d612-906d-414e-9e1f-639e2eaa493e;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;vtech_vlan_wan_id;text;1;;false;VLAN ID
+ee208229-d66c-46b6-9286-3cd4edda7628;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;vtech_vlan_wan_priority;text;0;;false;VLAN Priority
+ce5bf781-bb48-480a-b144-4fa466842fa1;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;stun_server;text;"";;false;STUN server address
+d39b97ea-fc69-4a42-af30-628cf6139e0b;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;stun_port;numeric;3478;;false;STUN server port
+7f93d499-13e8-4938-ba1f-01eafff43354;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;spa_secure_call_setting;text;No;;true;spa secure call No or Yes
+c471163a-12fa-11e8-b642-0ed5f89f718b;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;aastra_gmt_offset;numeric;0;;true;Aastra timezone offset in minutes (e.g. 300 = GMT-5 = Eastern Standard Time)
+c47117a2-12fa-11e8-b642-0ed5f89f718b;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;aastra_time_format;numeric;0;;true;Aastra clock format
+c47119aa-12fa-11e8-b642-0ed5f89f718b;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;aastra_date_format;numeric;0;;true;Aastra date format
+a780b88f-188b-4d73-a1df-f93a114ca16d;83913217-c7a2-9e90-925d-a866eb40b60e;recordings;storage_type;text;base64;;false;""
+ddf306c9-6f58-40f7-910e-2f27dc33fa57;1d61fb65-1eec-bc73-a6ee-a6203b4fe6f2;ring_group;destination_edit_rows;numeric;1;;true;""
+de655030-ae71-4b53-8068-5cf0b14cf635;1d61fb65-1eec-bc73-a6ee-a6203b4fe6f2;limit;ring_groups;numeric;3;;false;""
+13d07ee4-e887-4993-94ba-e0f9ce044eaf;91d9c209-1eca-46ca-8441-2a6bba386f53;provision;snom_time_zone;text;USA-7;;false;http://wiki.snom.com/Settings/timezone
+528ec73e-03bb-4ea1-9ce1-19b81fb3f584;4b821450-926b-175a-af93-a03c441818b1;time_conditions;preset_england;array;"{""new_years_day"":{""mday"":""1"",""mon"":""1""}}";;true;England Holiday
+420b7282-2e49-4d63-9eb3-48b3b96bc184;4b821450-926b-175a-af93-a03c441818b1;time_conditions;preset_england;array;"{""may_day"":{""mon"":""5"",""mday"":""1-7"",""wday"":""2""}}";;true;England Holiday
+c9ab6e93-63e0-4098-9290-7a721e813450;4b821450-926b-175a-af93-a03c441818b1;time_conditions;preset_england;array;"{""spring_bank_holiday"":{""mon"":""5"",""mday"":""25-31"",""wday"":""2""}}";;true;England Holiday
+b7eac3ac-a99d-4fc8-8e3e-682a17a5b463;4b821450-926b-175a-af93-a03c441818b1;time_conditions;preset_england;array;"{""august_bank_holiday"":{""mon"":""8"",""mday"":""25-31"",""wday"":""2""}}";;true;England Holiday
+cde53fd6-713e-43f9-beed-3cace375de56;4b821450-926b-175a-af93-a03c441818b1;time_conditions;preset_england;array;"{""christmas_day"":{""mday"":""25"",""mon"":""12""}}";;true;England Holiday
+3df036bb-ae96-4735-96da-a32e90b51940;4b821450-926b-175a-af93-a03c441818b1;time_conditions;preset_usa;array;"{""new_years_day"":{""mday"":""1"",""mon"":""1""}}";;true;USA Holiday
+1ce5c94b-7181-4b33-92b0-2cf4a97f2fa3;4b821450-926b-175a-af93-a03c441818b1;time_conditions;preset_usa;array;"{""presidents_day"":{""wday"":""2"",""mon"":""2"",""mday"":""15-21""}}";;true;USA Holiday
+0957bbc4-60e8-44d1-b51d-943de4ee5b2f;4b821450-926b-175a-af93-a03c441818b1;time_conditions;preset_usa;array;"{""memorial_day"":{""mday"":""25-31"",""wday"":""2"",""mon"":""5""}}";;true;USA Holiday
+0aa94174-a339-47d6-b6ab-c264b3786074;4b821450-926b-175a-af93-a03c441818b1;time_conditions;preset_usa;array;"{""independence_day"":{""mday"":""4"",""mon"":""7""}}";;true;USA Holiday
+be512c08-029e-49a0-937d-1a62fc029609;4b821450-926b-175a-af93-a03c441818b1;time_conditions;preset_usa;array;"{""labor_day"":{""wday"":""2"",""mon"":""9"",""mday"":""1-7""}}";;true;USA Holiday
+261a0ea4-26a3-4261-95e5-888afd221ca0;4b821450-926b-175a-af93-a03c441818b1;time_conditions;preset_usa;array;"{""columbus_day"":{""wday"":""2"",""mon"":""10"",""mday"":""8-14""}}";;true;USA Holiday
+829d346b-b0ed-4690-8641-8ed01052e303;4b821450-926b-175a-af93-a03c441818b1;time_conditions;preset_usa;array;"{""veterans_day"":{""mday"":""11"",""mon"":""11""}}";;true;USA Holiday
+c1fdfebe-3544-4b01-8a83-d0fee8e9a47a;4b821450-926b-175a-af93-a03c441818b1;time_conditions;preset_usa;array;"{""thanksgiving_day"":{""wday"":""5"",""mon"":""11"",""mday"":""22-28""}}";;true;USA Holiday
+2fcab411-971d-466c-bf6d-42f6bcd32ad2;4b821450-926b-175a-af93-a03c441818b1;time_conditions;preset_usa;array;"{""black_friday"":{""wday"":""6"",""mon"":""11"",""mday"":""23-29""}}";;true;USA Holiday
+82e3eb39-27a4-4d70-8436-11059d3e51e7;4b821450-926b-175a-af93-a03c441818b1;time_conditions;preset_usa;array;"{""christmas_day"":{""mday"":""25"",""mon"":""12""}}";;true;USA Holiday
+74199644-5156-4e46-9069-a56413750e01;4b821450-926b-175a-af93-a03c441818b1;time_conditions;preset_canada;array;"{""family_day"":{""wday"":""2"",""mon"":""2"",""mday"":""8-14""}}";;true;Canada Holiday
+6e848fde-8543-4410-b6f5-c387dc45fc49;4b821450-926b-175a-af93-a03c441818b1;time_conditions;preset_canada;array;"{""victoria_day"":{""wday"":""2"",""mon"":""5"",""mday"":""18-24""}}";;true;Canada Holiday
+49bbadb3-568d-42d8-b6b4-edc9560a054d;4b821450-926b-175a-af93-a03c441818b1;time_conditions;preset_canada;array;"{""canada_day"":{""mday"":""1"",""mon"":""7""}}";;true;Canada Holiday
+39c69aa6-124c-405e-a437-b49e379a7079;4b821450-926b-175a-af93-a03c441818b1;time_conditions;preset_canada;array;"{""bc_day"":{""wday"":""2"",""mon"":""8"",""mday"":""1-7""}}";;true;Canada Holiday
+2eed38e8-11c3-4477-9185-103c36ccf26d;4b821450-926b-175a-af93-a03c441818b1;time_conditions;preset_canada;array;"{""thanksgiving_day"":{""wday"":""2"",""mon"":""10"",""mday"":""8-14""}}";;true;Canada Holiday
+c3244258-55fe-4d20-a23d-ac9e108bf38e;4b821450-926b-175a-af93-a03c441818b1;time_conditions;preset_canada;array;"{""remembrance_day"":{""mday"":""11"",""mon"":""11""}}";;true;Canada Holiday
+51717873-86d2-43a2-8748-ff191b4915e7;4b821450-926b-175a-af93-a03c441818b1;time_conditions;preset_canada;array;"{""christmas_day"":{""mday"":""25"",""mon"":""12""}}";;true;Canada Holiday
+43ef3137-084a-40ea-94ed-42b68979c551;4b821450-926b-175a-af93-a03c441818b1;time_conditions;preset_canada;array;"{""labour_day"":{""wday"":""2"",""mon"":""9"",""mday"":""1-7""}}";;true;Canada Holiday
+1cf61dea-42b5-4799-b9fa-f2c3bd29e933;b523c2d2-64cd-46f1-9520-ca4b4098e044;voicemail;voicemail_file;text;attach;;true;"Define whether to attach voicemail files to email notifications, or only include a link."
+4723fe3b-e7ec-409e-a4a8-15ae274253fb;b523c2d2-64cd-46f1-9520-ca4b4098e044;voicemail;keep_local;boolean;true;;true;Define whether to keep voicemail files on the local system after sending attached via email.
+9a4879c0-87ac-42e5-99f2-2ca2c77dbd98;b523c2d2-64cd-46f1-9520-ca4b4098e044;voicemail;storage_type;text;base64;;false;Define which storage type (base_64 stores in the database).
+690a36a8-b6d3-47ea-8780-1af609c1966c;b523c2d2-64cd-46f1-9520-ca4b4098e044;voicemail;message_max_length;numeric;300;;true;Maximum length of a voicemail (in seconds).
+bfe802b1-fcad-41a3-9da2-6b0efdb0c05f;b523c2d2-64cd-46f1-9520-ca4b4098e044;voicemail;password_length;numeric;8;;true;The default length of characters in a voicemail password.
+b127ca03-c682-4d71-b412-4e50f1aca339;b523c2d2-64cd-46f1-9520-ca4b4098e044;voicemail;greeting_max_length;numeric;90;;true;Maximum length of a voicemail greeting (in seconds).
+370714b1-4d6d-4bb1-bb77-eae1fd668be3;b523c2d2-64cd-46f1-9520-ca4b4098e044;voicemail;remote_access;boolean;false;;true;Allow access to the voicemail menu with the correct voicemail password.
+d09e808d-bd28-400a-81db-8d41b6394527;b523c2d2-64cd-46f1-9520-ca4b4098e044;voicemail;message_order;text;asc;;true;Set the message order to asc or desc.
+b31bcf2d-cb43-41c3-8fb3-36ef74d079b0;b523c2d2-64cd-46f1-9520-ca4b4098e044;voicemail;password_complexity;boolean;true;;false;Enforce voicemail password complexity.
+95f9d770-0fb0-4e2c-93b1-d2a140568058;b523c2d2-64cd-46f1-9520-ca4b4098e044;voicemail;password_min_length;numeric;4;;false;Minimum voicemail password length.
+22cf494d-d605-42bd-a667-cbe5b4121973;b523c2d2-64cd-46f1-9520-ca4b4098e044;voicemail;smtp_from;text;"";;true;""
+b753197c-cb07-44d3-9074-8bf5bca391b8;b523c2d2-64cd-46f1-9520-ca4b4098e044;voicemail;smtp_from_name;text;"";;true;""
+77620475-258a-4988-bec5-f74f2603666e;b523c2d2-64cd-46f1-9520-ca4b4098e044;voicemail;not_found_message;boolean;false;;true;""
+0f208802-5f18-41f9-97a3-45e939e7a1b8;4a085c51-7635-ff03-f67b-86e834422848;cdr;b_leg;array;outbound;;false;""
+d9d09758-6deb-47e5-b5bb-812da3a8d196;4a085c51-7635-ff03-f67b-86e834422848;cdr;b_leg;array;inbound;;false;""
+74e33709-da7d-4d46-a31f-6580ab9a7714;4a085c51-7635-ff03-f67b-86e834422848;cdr;b_leg;array;local;;false;""
+dbbadd02-f95d-480b-85d5-2a4113d4cccc;4a085c51-7635-ff03-f67b-86e834422848;cdr;format;text;json;;true;""
+23335ac0-9466-4d16-af3f-81aa347159b1;4a085c51-7635-ff03-f67b-86e834422848;cdr;storage;text;db;;true;""
+dd09aca6-5663-11e7-907b-a6006ad3dba0;4a085c51-7635-ff03-f67b-86e834422848;cdr;stat_hours_limit;numeric;24;;false;""
+cea53099-96c0-405f-ada6-219d0b398944;4a085c51-7635-ff03-f67b-86e834422848;cdr;http_enabled;boolean;true;;true;""
+9009cb3d-5eb8-41fa-bcbb-ee6b63cdccfa;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_time_zone_name;text;United States-Eastern Time;;false;Time zone name example United States-Mountain Time
+7f4a1607-4cbe-49f5-8cd2-6d599b89bd9b;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_time_format;text;1;;false;"0-12 Hour, 1-24 Hour"
+166b27d1-1860-4154-88d3-5e15781e7bbb;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_date_format;text;3;;false;"0-WWW MMM DD (default), 1-DD-MMM-YY, 2-YYYY-MM-DD, 3-DD/MM/YYYY, 4-MM/DD/YY, 5-DD MMM YYYY, 6-WWW DD MMM"
+05bcbb47-06f6-4c81-a1c9-cdf2982d60a7;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_rport;boolean;1;;true;Send the response back to the source it came from.
+70894b7b-2edd-41ad-8526-060589df4e11;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_session_timer;boolean;0;;true;SIP Session Timers
+aa200d6f-c048-4203-9838-8dd05fa31bd5;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_retransmission;boolean;0;;true;Retransmission
+1374da96-dc40-4f12-8269-0b94278b7c55;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_srtp_encryption;text;0;;true;""
+f0704072-c3d9-48df-b89b-2aea6035b3c4;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_call_waiting;text;1;;true;Call Waiting 1=enabled 0=disable
+2c3445ff-0339-43d4-8762-3c87ec37be57;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_outbound_proxy_fallback_interval;numeric;3600;;false;Integer from 0 to 65535
+78f05ec5-d59c-4033-aeb5-62c9f46999cb;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_rfc2543_hold;numeric;0;;false;Default 0
+be02b916-3419-4bc7-881e-46711134577c;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_blf_led_mode;numeric;0;;false;The value is 0(default) or 1.
+2f5e8429-6890-4da7-84ae-65c9c29b5091;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_trust_ctrl;numeric;1;;true;"(0-Disabled;1-Enabled)"
+c45264b7-6e85-42e4-b245-f22caff091d4;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_hide_feature_access_codes_enable;numeric;0;;false;"(0-Disabled;1-Enabled)"
+fb13e647-ca3f-4da6-901c-584b8cde4055;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_voice_mail_popup_enable;numeric;0;;false;Display Voice Mail Popup
+dc4a391f-25b7-44bb-accb-efb23f20662c;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_missed_call_popup_enable;numeric;0;;false;Display Missed Call Popup
+85c7d304-2c91-447d-b139-c05d2499ea7d;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_cid_source;numeric;0;;true;"The type of SIP header(s) to carry the caller ID; 0-FROM (default), 1-PAI 2-PAI-FROM, 3-PRID-PAI-FROM, 4-PAI-RPID-FROM, 5-RPID-FROM"
+6fd955ef-2f65-41f0-84cf-5b3ad917cc20;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_dtmf_hide;numeric;1;;true;0-Disabled 1-Enabled
+968c9f53-305c-4fbd-a7dd-4dd6099e829e;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_sip_listen_port;numeric;5060;;false;5060 default
+3f903069-c0fc-4bf1-9c33-907bf238475e;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_firmware_url;text;https://server.yourdomain.com/app/yealink/resources/firmware;;true;Base URL for Yealink Firmware.  Download from http://support.yealink.com
+e8f3e617-a6b3-4859-af59-04e2349f3d49;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_firmware_cp860;text;cp860-37.81.0.10.rom;;true;Filename of the CP860 firmware ROM
+7a769f2f-2833-4b90-9789-ff96a4723773;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_firmware_cp960;text;cp960-73.80.0.25.rom;;true;Filename of the CP960 firmware ROM
+311d2739-a340-42f5-8e3e-6e6ecce1faa2;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_firmware_t29g;text;t29g-46.81.0.110.rom;;true;Filename of the T29G firmware ROM
+7223c3a7-5ef9-46a8-84be-39338a6788a6;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_firmware_t40g;text;t40g-76.81.0.110.rom;;true;Filename of the T40G firmware ROM
+c5d9b7ea-8e3b-4428-9845-438be7be0baa;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_firmware_t40p;text;t40p-54.81.0.110.rom;;true;Filename of the T40P firmware ROM
+f714e8a0-9753-48e0-9674-0f4efc7e4ff1;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_firmware_t41p;text;t41p-36.81.0.110.rom;;true;Filename of the T41P firmware ROM
+9480f346-c038-462b-b440-329383290b84;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_firmware_t41s;text;t41s-66.81.0.110.rom;;true;Filename of the T41S firmware ROM
+84eb10e2-bd9f-4bd0-8073-ac8cf002e7f0;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_firmware_t42g;text;t42g-29.81.0.110.rom;;true;Filename of the T42G firmware ROM
+768f216e-fc19-4c97-b843-03d48ce70c4e;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_firmware_t42s;text;t42s-66.81.0.110.rom;;true;Filename of the T42S firmware ROM
+5fb6ef46-0a7f-4bb6-b415-49b437454321;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_firmware_t46g;text;t46g-28.81.0.110.rom;;true;Filename of the T46G firmware ROM
+4e2b8fcb-7d06-4553-becf-9904e1331c4c;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_firmware_t46s;text;t46s-66.81.0.110.rom;;true;Filename of the T46S firmware ROM
+77314a84-6304-47d8-a6b4-fb6d12b8804f;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_firmware_t48s;text;t48s-66.81.0.110.rom;;true;Filename of the T48S firmware ROM
+c53fdce7-b0eb-49ef-9d58-5a3a212bf5bf;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_firmware_t49g;text;t49g-51.80.0.100.rom;;true;Filename of the T49Gfirmware ROM
+804003fc-f0e9-4b3b-a35b-6c2742f965eb;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_firmware_t52s;text;t52s-70.81.0.10.rom;;true;Filename of the T52Sfirmware ROM
+7378c0b6-3242-4989-8af6-903dfb437285;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_firmware_t54s;text;T54S(T52S)-70.82.0.20.rom;;true;Firmware tested 2017-11-26
+4ffd1ad7-1b00-41f7-8e93-19412127245a;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_firmware_t56a;text;t56a-58.80.0.25.rom;;true;Filename of the T56A firmware ROM
+616d6358-d07e-4e42-8560-7de0f42cd5b1;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_firmware_t58a;text;t58a-58.80.0.25.rom;;true;Filename of the T58A firmware ROM
+2cdd8b87-db72-4ad1-b18b-745fc1f7e906;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_firmware_t58v;text;t58v-58.80.0.25.rom;;true;Filename of the T58V firmware ROM
+68eba481-aeb1-4c7e-a4e4-630946abc0e7;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_network_vpn_enable;boolean;1;;false;"(0-Disabled;1-Enabled)"
+85675560-82cf-48a5-8056-227c01a44f37;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_openvpn_url;text;hxxps://replace-this.url/openvpn.tar;;false;(URL within 511 characters)
+b75ef82b-a225-43a5-a208-78d545cca8aa;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_ip_address_mode;numeric;0;;false;"IP Address mode 0-ipv4, 1-ipv6, 2-ipv4&ipv6"
+e731d65f-132b-49a1-9f20-39ecd1e70b54;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_lldp_enable;boolean;0;;false;"LLDP 0-Disabled, 1-Enabled"
+2d380c07-aba5-46a9-8ef5-7e6b713868fd;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_cdp_enable;boolean;0;;false;"CDP 0-Disabled, 1-Enabled"
+f54bd090-723c-47c8-a9cd-c1e875134501;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_overwrite_mode;boolean;0;;true;"Overwrite Mode 0-Disabled, 1-Enabled"
+709945c3-7fc4-4903-b6b2-7c0d695fea43;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_dsskey_length;numeric;0;;true;DSS Key Label Length Default-0 Extended-1 Mid Range-2
+c7227e2b-870f-4c11-aab8-dfff8d626ded;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_predial_autodial;boolean;0;;true;"Auto dial after digit timeout 0-Disabled (default), 1-Enabled;"
+627ef79d-1a49-4bae-b215-56182e308351;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_ring_type;text;custom.wav;;false;"custom ring tone (Busy.wav);"
+7af991ec-ddb9-4942-a05d-d1acc529fef5;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_ringtone_url;text;custom.wav;;false;"Before using this parameter, you should store the desired ring tone (custom.wav) to the provisioning server"
+368d8f25-9faf-417b-a1ac-942ecf8b9793;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_ringtone_delete;text;"http://localhost/all,delete";;false;"http://localhost/all,delete all the customized ring tones"
+3bcb4912-e34c-45b0-8612-662783ee8d1b;2c2453c0-1bea-4475-9f44-4d969650de09;server;temp;dir;/tmp;;true;""
+f1a7c2d4-ba3c-49c8-9146-e40eb8873030;2c2453c0-1bea-4475-9f44-4d969650de09;domain;template;name;default;;true;""
+da9aa071-5dd8-4955-b5a6-d3c60ce7d78a;2c2453c0-1bea-4475-9f44-4d969650de09;domain;menu;uuid;b4750c3f-2a86-b00d-b7d0-345c14eca286;;true;""
+500f7a88-e288-4a80-9f0a-b696f9f33cd6;2c2453c0-1bea-4475-9f44-4d969650de09;domain;language;code;en-us;;true;""
+c55b28df-0eba-4e8f-a13b-022d5dfd8d22;2c2453c0-1bea-4475-9f44-4d969650de09;domain;time_zone;name;"";;true;""
+cee8b1af-8b02-47e4-aa8e-267b18b69b67;2c2453c0-1bea-4475-9f44-4d969650de09;domain;cidr;array;"";;false;""
+cb55e6ac-9bb0-4714-b68f-82b39a3b9ec2;2c2453c0-1bea-4475-9f44-4d969650de09;domain;country;code;us;;true;""
+c338e26c-0dd5-4ad5-a055-82e2c5ed3f6f;2c2453c0-1bea-4475-9f44-4d969650de09;domain;bridge;text;outbound;;true;"outbound,loopback,lcr"
+57d81b35-bc24-4e92-8436-4335ab5e9d0b;2c2453c0-1bea-4475-9f44-4d969650de09;security;password_length;numeric;10;;true;Set the required length for the generated passwords.
+0fa21a56-7515-4c65-b5f8-270cc24ea375;2c2453c0-1bea-4475-9f44-4d969650de09;security;password_number;boolean;true;;false;Set whether to require at least one number in passwords.
+d5f9acbd-857c-42eb-9e9a-92a850fcb734;2c2453c0-1bea-4475-9f44-4d969650de09;security;password_lowercase;boolean;true;;true;Set whether to require at least one lowecase letter in passwords.
+256b0d87-a43e-4618-b96b-541e191879c7;2c2453c0-1bea-4475-9f44-4d969650de09;security;password_uppercase;boolean;true;;false;Set whether to require at least one uppercase letter in passwords.
+33914c55-9081-4b95-b62e-f1a500088d78;2c2453c0-1bea-4475-9f44-4d969650de09;security;session_rotate;boolean;true;;true;Whether to regenerate the session ID.
+97a2410b-cfc8-4194-9172-dd5b0acfa9f3;2c2453c0-1bea-4475-9f44-4d969650de09;email;smtp_auth;text;true;;true;""
+9f4a1209-72ba-435b-90e1-4cba48d74509;2c2453c0-1bea-4475-9f44-4d969650de09;email;method;text;smtp;;false;smtp|sendmail|mail|qmail
+8efff742-eea4-493d-abeb-064457586e26;2c2453c0-1bea-4475-9f44-4d969650de09;email;smtp_port;numeric;0;;false;use non-default port if enabled and non-zero
+16f40b7b-293d-4308-81f4-772e0ea4c536;2c2453c0-1bea-4475-9f44-4d969650de09;email;smtp_from;text;"";;true;""
+2976da3a-d8e5-4e25-9f16-463dfa256f4d;2c2453c0-1bea-4475-9f44-4d969650de09;email;smtp_from_name;text;"";;true;""
+0bd788c1-3262-4336-92f4-ef7869062380;2c2453c0-1bea-4475-9f44-4d969650de09;email;smtp_host;text;"";;true;""
+49e778a6-22a7-418f-84b9-bfa27e38f2e5;2c2453c0-1bea-4475-9f44-4d969650de09;email;smtp_username;text;"";;true;""
+8a5ae059-9bf3-4d6d-ae92-b6cb39766d0a;2c2453c0-1bea-4475-9f44-4d969650de09;email;smtp_password;text;"";;true;""
+fd7441d5-d348-4660-8c0b-6413220c680d;2c2453c0-1bea-4475-9f44-4d969650de09;email;smtp_secure;text;tls;;true;""
+e1c17089-1e75-4e46-9e59-4748bb6a6cec;2c2453c0-1bea-4475-9f44-4d969650de09;email;smtp_validate_certificate;boolean;true;;true;set to false to ignore SSL certificate warnings e.g. for self-signed certificates
+8a07ab78-f386-482c-85dd-7ce8127597d6;2c2453c0-1bea-4475-9f44-4d969650de09;login;password_reset_key;text;UfaCdgzmJBrbEEwHX.bI;;false;Display a Reset Password link on the login box (requires smtp_host be defined).
+962ac32c-74ce-4cce-b1d9-89f4d921493d;2c2453c0-1bea-4475-9f44-4d969650de09;login;domain_name_visible;boolean;true;;false;Displays a domain input or select box (if domain_name array defined) on the login box.
+796508ee-894d-4566-bb7f-e1269a6e0e26;2c2453c0-1bea-4475-9f44-4d969650de09;login;domain_name;array;pbx1.yourdomain.com;;false;Domain select option displayed on the login box.
+e20ff5fb-cc63-474b-90f8-f472d2247317;2c2453c0-1bea-4475-9f44-4d969650de09;dashboard;admin;array;voicemail;;true;Enable Dashboard Voicemail block for users in the admin group.
+39bdd07e-dca5-4aea-949b-72286bd66fe4;2c2453c0-1bea-4475-9f44-4d969650de09;dashboard;admin;array;missed;;true;Enable Dashboard Missed Calls block for users in the admin group.
+49dbc472-7c68-46b7-84da-986b3e925850;2c2453c0-1bea-4475-9f44-4d969650de09;dashboard;admin;array;recent;;true;Enable Dashboard Recent Calls block for users in the admin group.
+d8ee1c50-0c3f-41b8-879a-d0b9c58e4479;2c2453c0-1bea-4475-9f44-4d969650de09;dashboard;admin;array;counts;;true;Enable Dashboard Domain Counts block for users in the admin group.
+5d96872d-7828-489e-b87a-0e7b75cf1a84;2c2453c0-1bea-4475-9f44-4d969650de09;dashboard;admin;array;call_routing;;true;Enable Dashboard Call Routing controls for users in the admin group.
+f7ca9dc1-b06e-4477-94c6-c660792ebe6c;2c2453c0-1bea-4475-9f44-4d969650de09;dashboard;admin;array;ring_groups;;true;Enable Dashboard Ring Group Forwarding controls for users in the admin group.
+3f727c07-51ec-42fb-82fc-0a711b87dd76;2c2453c0-1bea-4475-9f44-4d969650de09;dashboard;admin;array;caller_id;;false;Enable changing Caller ID name and number.
+610cfc85-7a17-4c96-a7c7-a83054710bc1;2c2453c0-1bea-4475-9f44-4d969650de09;dashboard;superadmin;array;voicemail;;true;Enable Dashboard Voicemail block for users in the superadmin group.
+e5064608-707a-456d-8b1d-d658e7f1b8f8;2c2453c0-1bea-4475-9f44-4d969650de09;dashboard;superadmin;array;missed;;true;Enable Dashboard Missed Calls block for users in the superadmin group.
+da9dc1a2-5d10-4fa4-82f9-0baebc1f8222;2c2453c0-1bea-4475-9f44-4d969650de09;dashboard;superadmin;array;recent;;true;Enable Dashboard Recent Calls block for users in the superadmin group.
+3aa6b8d3-bd6d-4f4f-9a62-104f3452f31b;2c2453c0-1bea-4475-9f44-4d969650de09;dashboard;superadmin;array;counts;;true;Enable Dashboard System Counts block for users in the superadmin group.
+13387e37-bf0a-43ca-a24f-94339bd61208;2c2453c0-1bea-4475-9f44-4d969650de09;dashboard;superadmin;array;system;;true;Enable Dashboard System Status block for users in the superadmin group.
+8ca6fc59-9243-4a4f-9358-006469cf828a;2c2453c0-1bea-4475-9f44-4d969650de09;dashboard;superadmin;array;call_routing;;true;Enable Dashboard Call Routing controls for users in the superadmin group.
+d81aa35c-06cd-4013-b985-1119ce4ba6bc;2c2453c0-1bea-4475-9f44-4d969650de09;dashboard;superadmin;array;caller_id;;false;Enable changing Caller ID name and number.
+78bb45d5-8108-4bed-aced-d764575531dc;2c2453c0-1bea-4475-9f44-4d969650de09;dashboard;superadmin;array;ring_groups;;true;Enable Dashboard Ring Group Forwarding controls for users in the superadmin group.
+d2bf2781-18c2-44a4-bdf4-68516e68d69c;2c2453c0-1bea-4475-9f44-4d969650de09;dashboard;user;array;voicemail;;true;Enable Dashboard Voicemail block for users in the users group.
+22f90e1b-112c-4842-af77-376226e5aa46;2c2453c0-1bea-4475-9f44-4d969650de09;dashboard;user;array;missed;;true;Enable Dashboard Missed Calls block for users in the users group.
+f1bf3d93-29ce-4c3e-8e91-e8ec36d1220b;2c2453c0-1bea-4475-9f44-4d969650de09;dashboard;user;array;recent;;true;Enable Dashboard Recent Calls block for users in the users group.
+f4e9247b-bfd1-40ed-9a1e-920e7d9ed2bb;2c2453c0-1bea-4475-9f44-4d969650de09;dashboard;user;array;ring_groups;;true;Enable Dashboard Ring Group Forwarding controls for users in the users group.
+ed51b63a-0a42-4c82-84e2-09e9222034ea;2c2453c0-1bea-4475-9f44-4d969650de09;dashboard;user;array;caller_id;;false;Enable changing Caller ID name and number.
+98be8c07-eb3a-45c5-9565-341e60f0d82b;2c2453c0-1bea-4475-9f44-4d969650de09;dashboard;agent;array;call_center_agents;;true;Enable Dashboard Call Center Agent Status block for users in the agent group.
+85d79c4e-4689-4d8e-b87d-5edd5b1574b1;2c2453c0-1bea-4475-9f44-4d969650de09;cache;method;text;memcache;;true;Cache methods file and memcache.
+7b644bfb-124f-4212-9541-1ca564be9d79;2c2453c0-1bea-4475-9f44-4d969650de09;cache;location;text;/tmp;;true;Location for the file cache.
+38cf53d2-5fae-43ed-be93-33b0a5cc1c38;112124b3-95c2-5352-7e9d-d14c0b88f207;user;unique;text;global;;false;""
+e3f5f4cd-0f17-428a-b788-2f2db91b6dc7;112124b3-95c2-5352-7e9d-d14c0b88f207;user;password_length;numeric;10;;true;The default length of characters in a user password.
+51c106d9-9aba-436b-b9b1-ff4937cef706;112124b3-95c2-5352-7e9d-d14c0b88f207;user;password_number;boolean;true;;true;Set whether to require at least one number in user passwords.
+973b6773-dac0-4041-844e-71c48fc9542c;112124b3-95c2-5352-7e9d-d14c0b88f207;user;password_uppercase;boolean;true;;true;Set whether to require at least one uppercase letter in user passwords.
+a6b6d9cc-fb25-4bc3-ad85-fa530d9b334d;112124b3-95c2-5352-7e9d-d14c0b88f207;user;password_special;boolean;true;;true;Set whether to require at least one special character in user passwords.
+727977e5-8b5f-4d80-af37-41fd3a4a1859;112124b3-95c2-5352-7e9d-d14c0b88f207;limit;users;numeric;3;;false;""
+4c8df6ee-5858-40ee-b90f-b3b1d066a91c;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;background_color;array;#6c89b5;;true;Set a background color.
+d79fb881-8a1c-4082-9ef9-5ff359186e30;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;background_color;array;#144794;;true;"Set a secondary background color, for a gradient effect."
+e46af53d-0dd7-4b2b-9806-f790a477f245;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;domain_visible;text;true;;true;Set the visibility of the name of the domain currently being managed.
+4a92f422-934f-4ae9-b918-fa932cb1e089;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;logout_icon_visible;text;false;;true;Set the visibility of the logout icon.
+b339908b-6208-4459-93ba-9c469db8549b;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;domain_color;text;#ffffff;;false;Set the text color (and opacity) for domain name.
+524204fa-4ffe-415e-9436-b1b26b7633a6;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;domain_color_hover;text;#69e5ff;;false;Set the text hover color (and opacity) for domain name.
+a10f1791-135b-4041-b094-f95e25e2a0bf;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;logout_icon_color_hover;text;#69e5ff;;false;Set the hover color (and opacity) for the logout icon (if visible).
+028f1f3e-92dc-4d01-ae62-66cc27367508;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;menu_main_toggle_color;text;#ffffff;;false;Set the color (and opacity) for the menu toggle icon (in mobile view).
+9cc1929c-0318-4733-bf46-483e898800fd;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;footer_background_color;text;"rgba(0,0,0,0.1)";;true;Set the background color (and opacity) for the footer bar.
+55ae9ce5-1e7d-4ff5-a667-582365780799;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;footer_color;text;"rgba(255,255,255,0.1)";;false;Set the text color (and opacity) for the footer bar.
+9cfc274d-a4d7-40d6-9ec4-1ea7610c90b5;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;footer_border_radius;text;0 0 4px 4px;;false;Set the border radius of the footer bar.
+214fbeb7-e063-4984-8e56-89bb323c8b2a;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;message_default_background_color;text;#fafafa;;true;Set the background color for the positive (default) message bar.
+34b0c2d3-77f9-42f1-9b39-57132ff6fed7;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;message_default_color;text;#666;;true;Set the text color for the positive (default) message bar text.
+6f399020-565d-11e7-907b-a6006ad3dba0;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;message_positive_background_color;text;#ccffcc;;true;Set the background color for the positive (positive) message bar.
+6f399372-565d-11e7-907b-a6006ad3dba0;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;message_positive_color;text;#004200;;true;Set the text color for the positive (positive) message bar text.
+635387b9-e094-411a-a39c-3055b5cc9347;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;message_negative_background_color;text;#ffcdcd;;true;Set the background color for the negative message bar.
+3c03df5c-e140-427b-9b08-bc3d89b3c4df;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;message_negative_color;text;#670000;;true;Set the text color for the negative message bar text.
+f8a16dbb-24fb-4765-a954-4ab6eaf1f020;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;message_alert_color;text;#d66721;;true;Set the text color for the alert message bar text.
+829b1d48-b06d-4c60-beb3-6500f3493fbb;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;message_opacity;text;0.9;;true;Set the opacity of the message bar (decimal).
+c6a52e5a-2b40-4622-97cd-1623c8d55ce9;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;message_delay;text;1.75;;true;Set the hide delay of the message bar (seconds).
+579ad7cc-20dc-4e13-a3de-ef377778e458;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;background_image_enabled;boolean;true;;false;Enable use of background images.
+ab5e54fd-af8e-4fea-a4fe-14e2f67c5deb;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;body_color;text;#ffffff;;false;Set then body background color (and opacity) of the content.
+ce3a2e85-472e-4375-a447-d7937cb6dbb7;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;body_shadow_color;text;#000000;;true;Set the color (and opacity) of the body.
+5d9315f6-85f9-40ae-a063-923e43269b91;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;body_border_radius;text;4px;;false;Set the border radius of the body.
+d018c68f-6df7-4649-ace1-c7614f1e257f;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;cache;boolean;false;;false;Set whether to cache the theme in the session.
+cb394e43-a98d-4f9b-8d89-838bc531d01f;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;logo_align;text;center;;false;Set the alignment of the header logo (Inline menu only)
+c03db08e-63c3-461b-9f63-6389bbf3bb54;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;menu_main_background_color;text;#ff0000;;false;Set a background color (and opacity) of the main menu bar.
+116b7505-13b2-4349-a6da-1716659fdbcf;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;menu_main_background_color_hover;text;#ff0000;;false;Set a background hover color (and opacity) of the main menu items.
+88279d7e-2df3-4ee8-923c-a9def9effa59;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;menu_main_icons;boolean;false;;false;Show icons next to main menu items.
+b2bf965e-c610-4429-b766-c10013d17f4e;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;menu_main_background_image;text;/themes/default/images/background_black.png;;false;Set a background image for the main menu bar.
+2ab1e736-4c98-4f4f-9f9c-8c334a54f469;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;menu_main_shadow_color;text;#000000;;true;Set the shadow color (and opacity) of the main menu bar.
+05d8750b-e2df-4eca-aa7c-23cb56749593;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;menu_main_text_color;text;#ffffff;;false;Set the text color of the main menu items.
+b81d5b73-890e-4365-a392-304699a1df27;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;menu_main_text_color_hover;text;#69e5ff;;false;Set the text hover color of the main menu items.
+aaed6662-d441-4a34-9ac6-874af33e4fd1;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;menu_main_text_font;text;Arial;;false;Set the font of the main menu items.
+00e3831d-4d08-4d69-9937-061380d8eb26;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;menu_main_text_size;text;10.25pt;;false;Set the text size of the main menu items.
+6c39d303-746b-4e7e-993c-d80667922100;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;menu_main_border_size;text;1px;;false;Set the border size of the main menu.
+07bb7ae0-29bf-490e-a425-1b44f8a059c5;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;menu_main_border_color;text;#ffffff;;false;Set the border color (and opacity) of the main menu.
+81a1a867-036d-4e9d-a2b8-133f811efb2f;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;menu_position;text;top;;true;Set the position of the main menu (Fixed menu only).
+ed3d428b-8507-41ca-8802-2c6a0d3e8138;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;menu_style;text;fixed;;true;Set the style of the main menu.
+71c68ea8-8242-4820-93ac-4825f91eb123;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;menu_sub_background_color;text;#000000;;false;Set the background color (and opacity) of the sub menus.
+73d246c7-9f60-410b-bdc8-9e80b3836c7d;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;menu_sub_background_color_hover;text;"";;false;Set the hover background color (and opacity) of the sub menu items.
+cfbac64a-ed95-470d-887b-3268e1a57144;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;menu_sub_icons;boolean;false;;true;Show indicator icons next to selected sub menu items.
+714bd26b-7718-4f21-b603-9093222961e8;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;menu_sub_text_color;text;#ffffff;;false;Set the text color (and opacity) of sub menu items.
+b7d86884-d717-463f-a811-82081c8a350a;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;menu_sub_text_color_hover;text;#69e5ff;;false;Set the hover text color (and opacity) of sub menu items.
+12ceab7a-a405-4099-b78c-1696fd3cab51;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;menu_sub_text_font;text;Arial;;false;Set the font of the sub menu items.
+b8cc9e2b-cc34-4fd1-a55f-b68d82c05979;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;menu_sub_text_size;text;10pt;;false;Set the text size of the sub menu items.
+b59bae75-29a3-47e9-b589-910cececd320;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;menu_sub_border_radius;text;0 0 4px 4px;;false;Set the border radius of the sub menu.
+1b9c0057-c27b-40d3-9535-b11b96a3402e;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;menu_sub_border_size;text;1px;;false;Set the border size of the sub menu.
+deccd9a4-8243-46da-9dbe-e5eb73c24a15;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;menu_sub_border_color;text;#ffffff;;false;Set the border color (and opacity) of the sub menu.
+a0059369-f8f6-4cb2-b1d2-ab9a93331641;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;heading_text_font;text;arial;;false;Set the font of the page heading text.
+e29affec-f70e-4d85-9e9a-f583b4d02b32;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;heading_text_color;text;#952424;;false;Set the color (and opacity) of the page heading text.
+1842e283-13c5-4927-9b89-2cf5f5acea07;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;body_text_font;text;arial;;false;Set the font of body text.
+41841015-4b58-4b38-a3f2-3c0e1fe0a17c;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;text_link_color;text;#004083;;false;Set the link color (and opacity) of text links outside tables.
+a652754c-c15c-4109-a92c-896fadc3ad07;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;text_link_color_hover;text;#5082ca;;false;Set the hover color (and opacity) of text links outside tables.
+fdb84692-190e-4e54-83e4-5d7c8e288d43;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;table_heading_text_font;text;arial;;false;Set the text font of table header rows.
+368cdf50-629d-4169-aac7-dc51ef1428ac;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;table_heading_text_size;text;12px;;false;Set the text size of table header rows.
+9d541f65-896b-44d3-bf9b-e04cb32403d1;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;table_heading_text_color;text;#3164ad;;false;Set the text color (and opacity) of table header rows.
+d4246cbc-38ff-48da-817a-ab96399cd6a4;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;table_heading_border_color;text;#a4aebf;;false;Set the bottom border color (and opacity) of table header rows.
+8d756015-05b1-43fb-9de6-85b901b44f3e;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;table_row_text_font;text;arial;;false;Set the text font of table data rows.
+3ca6707b-fded-453c-9cab-c4c7099b6cac;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;table_row_text_size;text;12px;;false;Set the text size of table data rows.
+7b608cb0-5f6c-4b9d-ac1a-94ed495ef283;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;table_row_text_color;text;#000;;false;Set the text color (and opacity) of table data rows.
+8091fae1-2fc8-4149-b1a7-b43e28cf97ef;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;table_row_background_color_dark;text;#e5e9f0;;false;Set the darker background color (and opacity) of table data rows.
+117c0235-4387-43f4-8cd4-7ad4fec97820;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;table_row_background_color_medium;text;#f0f2f6;;false;Set the medium background color (and opacity) of table data rows.
+e7645039-6c1c-40d7-90cf-cf7fccf52fc1;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;table_row_background_color_light;text;#fff;;false;Set the lighter background color (and opacity) of table data rows.
+efa1022d-2b88-4a5d-981e-a2540c64324e;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;table_row_border_color;text;#c5d1e5;;false;Set the bottom border (dividing line) color (and opacity) of table data rows.
+b1b2302d-4a58-4fe0-a09f-b3c3c484d39f;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_border_color_hover;text;#cbd3e1;;false;Set the border hover color (and opacity) of the Dashboard block.
+6a7a251a-89a1-48d9-b5de-efd0962941ae;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_border_radius;text;5px;;false;Set the border radius of the Dashboard block.
+b0e092e8-ade5-4607-b57b-a5c5b4b9c426;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_heading_background_color;text;#8e96a5;;false;Set the background color (and opacity) of the Dashboard block heading.
+dd536d7f-ee46-45fe-a28e-7baca9d25357;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_heading_background_color_hover;text;#969dab;;false;Set the background hover color (and opacity) of the Dashboard block heading.
+b5e33723-0ef5-4223-8352-33f74476732e;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_heading_text_color;text;#ffffff;;false;Set the color (and opacity) of the Dashboard block heading text.
+b09126da-c68b-473c-83f8-8e9a7523ce37;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_heading_text_color_hover;text;#ffffff;;false;Set the hover color (and opacity) of the Dashboard block heading text.
+1a52a4b6-5722-4fbe-ae4e-7b3d38cff437;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_heading_text_size;text;10.5pt;;false;Set the size of the Dashboard block heading text.
+b7bdbe98-f667-42ed-8864-cf92e3b048df;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_heading_text_shadow_color;text;#000000;;false;Set the shadow color (and opacity) of the Dashboard block heading text.
+6e33d5d8-679a-4fe2-bd6a-f192a8637e8b;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_heading_text_shadow_color_hover;text;#000000;;false;Set the shadow hover color (and opacity) of the Dashboard block heading text.
+320bae87-47dc-4b21-a2f0-eea875ce5b50;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_number_background_color;text;#a4aebf;;false;Set the background color (and opacity) of the Dashboard block number.
+244f575f-f244-4101-b107-f237a89efb66;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_number_background_color_hover;text;#aeb7c5;;false;Set the background hover color (and opacity) of the Dashboard block number.
+0b668534-2141-436c-8745-624d42e7bebb;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_number_text_color;text;#ffffff;;false;Set the color (and opacity) of the Dashboard block number.
+1d829bf8-6b4e-44e8-8cb5-962f8b91d64e;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_number_text_color_hover;text;#ffffff;;false;Set the hover color (and opacity) of the Dashboard block number.
+9551c923-15e5-4a62-97a3-d66061667fe5;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_number_text_font;text;"Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif";;false;Set the font of the Dashboard block number.
+0ecc8aaa-2da9-4941-bf35-9b982b513b87;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_number_text_size;text;60pt;;false;Set the size of the Dashboard block number.
+515d6c76-ff34-4fab-b01f-9c607ed1441b;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_number_text_shadow_color;text;#737983;;false;Set the shadow color (and opacity) of the Dashboard block number.
+8a5322bd-817c-4b0d-bae1-9b9bfca364f6;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_number_text_shadow_color_hover;text;#737983;;false;Set the shadow hover color (and opacity) of the Dashboard block number.
+2be04801-cd11-49b3-bf83-d5a46e66b1ac;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_number_title_text_color;text;#ffffff;;false;Set the color (and opacity) of the Dashboard block number title.
+384be103-0604-447b-8623-4e563d6b4d89;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_number_title_text_size;text;14px;;false;Set the size of the Dashboard block number title.
+8b6e09d6-2e49-4661-ac02-87b6e8dbffbd;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_number_title_text_shadow_color;text;#737983;;false;Set the shadow color (and opacity) of the Dashboard block number title.
+caa50bb2-3db8-4c4d-9172-b60fa015a909;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_detail_heading_text_size;text;11px;;false;Set the size of the Dashboard block detail header text.
+f025532c-ea32-4699-a803-0ebf9ae7f8ef;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_detail_row_text_size;text;11px;;false;Set the size of the Dashboard block detail row text.
+d64c0b99-9090-4741-9f29-fcbe73bbc2b6;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_detail_shadow_color;text;#737983;;false;Set the shadow color of the Dashboard block detail box.
+fe139795-6099-4cd6-8cc7-782ae678f226;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_detail_background_color_center;text;#f9fbfe;;false;Set the center gradient color of the Dashboard block detail area.
+45508cb4-b3ce-45f1-b7dd-fd37969276a8;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_detail_background_color_edge;text;#edf1f7;;false;Set the edge gradient color of the Dashboard block detail area.
+499f4068-f6d7-48b4-9ec8-344cadcb1028;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_footer_background_color;text;#e5e9f0;;false;Set the background color (and opacity) of the Dashboard block footer bar.
+2d8a4289-cefb-4d5c-8370-de794c742597;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_footer_background_color_hover;text;#ebeef3;;false;Set the background hover color (and opacity) of the Dashboard block footer bar.
+6a3ea1e8-be9b-4148-91b0-39bc4bb7456d;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_footer_dots_color;text;#a4aebf;;false;Set the color (and opacity) of the Dashboard block footer bar dots.
+564b4734-d19d-4c51-8a6b-2c46e18f8a4c;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;form_table_label_padding;text;7px 8px;;false;Set the padding of the form label cell.
+f59cc605-9774-4d62-95cb-e33f0a571f95;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;form_table_label_background_color;text;#e5e9f0;;false;Set the background color (and opacity) of the form label cell.
+3d23e0b4-316c-4eac-97aa-41d5edcb96a3;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;form_table_label_border_color;text;#ffffff;;false;Set the bottom-border color (and opacity) of the form label cell.
+e3e8e7dc-7403-47da-bcba-7a1b9e08581b;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;form_table_label_border_radius;text;4px;;false;Set the border radius of the form label cell.
+bf4d3bd7-cd81-4819-b0f3-097b9511f3a5;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;form_table_label_text_size;text;9pt;;false;Set the text size of the form label.
+a506c43a-204f-447d-b140-8f06000797a2;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;form_table_label_text_font;text;Arial;;false;Set the text font of the form label.
+ae1b881e-5aa2-4d6a-ae18-46093155be06;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;form_table_label_required_background_color;text;#e5e9f0;;false;Set the background color of the required form label cell.
+735563af-c151-4e7a-b3a1-b25b7c8e9e24;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;form_table_label_required_border_color;text;#cbcfd5;;false;Set the right-border color (and opacity) of the required form label cell.
+e03c7322-1cfd-4283-8e7e-bf6aafa49988;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;form_table_label_required_text_color;text;#000000;;false;Set the text color (and opacity) of the required form label.
+11f71d56-d6f3-4380-939b-9a3ab98e1e72;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;form_table_label_required_text_weight;text;bold;;false;Set the text weight of the required form label.
+66763845-4bd1-4db3-b3c6-4a2b3d58e70b;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;form_table_field_padding;text;6px;;false;Set the padding of the form field cell.
+5b40755b-fb45-4361-8cc6-fe26558dcb5d;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;form_table_field_background_color;text;#ffffff;;false;Set the background color (and opacity) of the form field cell.
+0683fa6c-c8c8-483d-8bf8-3fae1a00a17a;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;form_table_field_border_color;text;#e5e9f0;;false;Set the bottom-border color (and opacity) of the form field cell.
+c63fd0e7-0992-4b89-af72-973183e4c3ce;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;form_table_field_border_radius;text;0;;false;Set the border radius of the form label cell.
+a6d147ba-14f8-4acd-a458-5e462a24b8a7;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;form_table_field_text_font;text;Arial;;false;Set the font of text in the form field cell.
+9fa3a6fa-c66c-4672-9481-7cb87c03ef82;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;form_table_field_text_color;text;#666666;;false;Set the color (and opacity) of text in the form field cell.
+48b9ad5a-2f7a-4836-b1e5-fa1d3680510a;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;form_table_heading_padding;text;8px 8px 4px 8px;;false;Set the padding of form column headings.
+f5619cea-bd16-4230-963a-80af6cfc4c96;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;form_table_row_padding;text;3px 0;;false;Set the padding of form row cells.
+4fa1a783-83c7-4fd3-a310-2227fd7d0398;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;form_table_row_text_size;text;9pt;;false;Set the size of text in the form rows.
+fd21b95f-3b25-44f6-b429-c0e9d7b3a023;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_background_color;array;#6c89b5;;false;Set the background color of the login page.
+a2acc3fc-509b-472d-a7f0-55dd8b99e1ff;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_background_image_enabled;boolean;true;;false;Enable use of background images on the login page.
+685ac6a3-5f2f-4920-a40b-764e51bf97c4;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_body_background_color;text;"rgba(255,255,255,0.3)";;true;Set the background color for the login box.
+b8743be3-bfa8-4196-9aca-798debb973b9;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_body_shadow_color;text;"rgba(140,140,140,0.3)";;true;Set the shadow color of the login box.
+b7b9d5ca-79e4-45e2-a105-3c246db8f97b;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_body_padding;text;30px;;false;Set the padding of the login box.
+2571f132-60b5-469c-95a4-380b69284b71;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_body_width;text;100%;;false;Set the width of the login box.
+963d6315-4541-43c6-828f-86e6e4b8c702;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_body_border_radius;text;4px;;false;Set the border radius of the login box.
+7cd9e96b-8320-4419-8997-49047d83a9c5;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_body_border_size;text;1px;;false;Set the border size of the login box.
+fe03135c-9a4b-4257-bcd4-56655a5c6c6b;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_body_border_color;text;#ffffff;;false;Set the border color (and opacity) of the login box.
+17ba4c02-61c4-48eb-8478-12c34bce8f23;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_link_text_color;text;#004083;;false;Set the color (and opacity) of text links on the login box.
+dd1d20b6-2c83-4b68-bfaa-59c6cc04918c;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_link_text_size;text;11px;;false;Set the size of text links on the login box.
+7040a557-55b4-44f9-bf74-c5899ed4c630;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_link_text_font;text;Arial;;false;Set the font of text links on the login box.
+e16a2332-5a1b-4ae3-803c-684f67c7dcf5;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;button_background_color;text;#4f4f4f;;false;Set the background main/top color (and opacity) of buttons.
+788cbeee-634c-4f77-b583-1f43d2f19490;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;button_background_color_bottom;text;#000000;;false;Set the background bottom color (and opacity) of buttons.
+4ef29718-127d-43b5-9d1b-6328540460f3;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;button_background_color_hover;text;#000000;;false;Set the background main/top hover color (and opacity) of buttons.
+c8c6cd8b-9e57-472d-9a1e-73129b723b09;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;button_background_color_bottom_hover;text;#000000;;false;Set the background bottom hover color (and opacity) of buttons.
+fdefb220-c2ca-439e-a8e8-ac946d442ccc;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;button_border_size;text;1px;;false;Set the border size of buttons.
+efa1c1bd-cc70-4a03-ad54-57fbeb3baac9;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;button_border_color;text;#242424;;false;Set the border color (and opacity) of buttons.
+01cae198-b349-4ded-a458-3ce63aa4c277;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;button_border_color_hover;text;#000000;;false;Set the border hover color (and opacity) of buttons.
+1dca5fb7-39d3-45c8-b78b-2ca9e46a510e;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;button_border_radius;text;3px;;false;Set the border radius of buttons.
+cacd5277-6743-48f7-a4db-a7951b819bc9;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;button_text_size;text;11px;;false;Set the size of button text.
+3ae30cca-4115-4f0a-95e4-dc26d3ec020d;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;button_text_color;text;#ffffff;;false;Set the color (and opacity) of button text.
+610885dd-d64d-417d-a04c-b2462470fa95;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;button_text_color_hover;text;#ffffff;;false;Set the hover color (and opacity) of button text.
+5313ab04-067f-48ad-b059-3e2de81f0f13;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;button_text_weight;text;bold;;false;Set the weight of button text.
+0b4b8dc0-5701-4603-b528-d2dec2fdff62;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;button_padding;text;5px 8px;;false;Set the padding of buttons.
+74310f77-d2e1-4edf-982d-1ca26c0ea256;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;button_height;text;28px;;false;Set the height of buttons.
+7f8048b5-e4aa-4625-987f-5f9b80abe81b;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;input_background_color;text;#ffffff;;false;Set the background color (and opacity) of text inputs.
+2bde8057-b7c8-4322-95db-6df2ed5aadac;;switch;bin;dir;"";;true;""
+949d92df-7746-4ade-9b02-9e605a70e11a;;switch;base;dir;/usr;;true;""
+eaf93c2c-84c2-489b-a8e3-a179255c3ec8;;switch;call_center;dir;/etc/freeswitch/autoload_configs;;false;""
+ee43c0ee-b892-4657-b6cc-ce5a4dc004c2;;switch;conf;dir;/etc/freeswitch;;true;""
+23855c47-4141-4f46-8109-fc46617da260;;switch;db;dir;/var/lib/freeswitch/db;;true;""
+2531fc06-ff18-4f39-b4e0-d346dc83f3af;;switch;dialplan;dir;/etc/freeswitch/dialplan;;false;""
+1ff0a9ab-343d-410c-a1b5-7a590c39bd3d;;switch;extensions;dir;/etc/freeswitch/directory;;false;""
+9658f977-82da-4879-9b37-c5310296884d;;switch;grammar;dir;/usr/share/freeswitch/grammar;;true;""
+0afddd8f-9bad-4ccc-b528-186a073a1f30;;switch;log;dir;/var/log/freeswitch;;true;""
+8ffb965a-4001-4bfa-8edb-e37236c393b5;;switch;mod;dir;/usr/lib/freeswitch/mod;;true;""
+7ece70f2-2752-41ed-aa1d-ed445a03f772;;switch;phrases;dir;/etc/freeswitch/lang;;true;""
+e7024803-cd0d-4a6d-b6e9-eeb4a57db241;;switch;recordings;dir;/var/lib/freeswitch/recordings;;true;""
+b012696f-f0f0-474c-a441-258cd3faff57;;switch;scripts;dir;/usr/share/freeswitch/scripts;;true;""
+623facf7-9dbc-4c95-a3c7-ab9b30e8301e;;switch;sip_profiles;dir;/etc/freeswitch/sip_profiles;;false;""
+bfd73bf1-3c4a-47db-85fb-5a34bc7edb9a;;switch;sounds;dir;/usr/share/freeswitch/sounds;;true;""
+54c5bf57-ad24-4ffa-ac98-02610589e313;;switch;storage;dir;/var/lib/freeswitch/storage;;true;""
+bfa05a79-4c78-48a8-a59f-d63d1dc0dbb0;;switch;voicemail;dir;/var/lib/freeswitch/storage/voicemail;;true;""
+ed380d7d-b3b8-40b4-8528-f10d521ddef0;;provision;http_auth_password;array;"";;false;""
+e2bff94b-2c68-45ee-9141-d4cdb437c644;;login;message;text;"";;true;""
+2e217303-53ff-4dda-b74e-7f07738d83c2;17e628ee-ccfa-49c0-29ca-9894a0384b9b;editor;font_size;text;14px;;false;Set the default text size for Editor.
+62cfc1ac-6566-45ba-8c7d-f4234ab1b31e;17e628ee-ccfa-49c0-29ca-9894a0384b9b;editor;live_previews;boolean;false;;false;"Enable or disable live previewing of syntax, text size and theme changes."
+9979b33a-2430-46c0-9b19-ef6ea655df9c;c4e85f9c-f7df-47b4-921e-de0ff356eee4;provision;fanvil_stun_server;text;example.domain.tld;;false;enter a server name or ip
+e745997c-a093-4550-88ee-8be777f07236;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;input_border_color_hover;text;#c0c0c0;;false;Set the border hover color (and opacity) of text inputs.
+c612a32c-4308-42a0-a8eb-ec810ac8d1d3;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;input_border_color_focus;text;#c0c0c0;;false;Set the border focus color (and opacity) of text inputs.
+fa1de334-854d-47ce-bf49-168eb0fd1525;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;input_border_size;text;1px;;false;Set the border size of text inputs.
+6dd82af4-090d-4e1f-87f6-1a74f7428c32;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;input_shadow_inner_color;text;#cddaf0;;true;Set the inner shadow color (and opacity) of text inputs.
+495a6f05-e8d2-4e61-867a-3a0127862341;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;input_shadow_inner_color_focus;text;#ffffff;;false;Set the inner focus shadow color (and opacity) of text inputs.
+1e610f5f-a9da-42f5-9c3c-3098dd41fec6;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;input_shadow_outer_color;text;#ffffff;;false;Set the outer shadow color (and opacity) of text inputs.
+0b966a40-7ff7-4438-971c-21330484f773;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;input_shadow_outer_color_focus;text;#cddaf0;;true;Set the outer focus shadow color (and opacity) of text inputs.
+52b29b82-6e1d-4705-a842-7895c3dc258f;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;input_text_size;text;12px;;false;Set the size of text input content.
+6885cebe-0e04-4dc7-a0fc-b101b64471f5;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;input_text_font;text;Arial;;false;Set the font of text input content.
+8cce8c50-dbb6-4eaf-a5b7-93c374df5b01;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;input_text_placeholder_color;text;#999999;;false;Set the color (and opacity) of input placeholder text.
+c2630eb3-a04e-4a32-9990-45f37af70005;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_input_background_color;text;#ffffff;;false;Set the background color (and opacity) of text inputs on the login box.
+f04fd86a-c223-4f79-ad7a-7c7d2bf4da72;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_input_border_color;text;#c0c0c0;;false;Set the border color (and opacity) of text inputs on the login box.
+1862ce18-ab7d-427e-9c88-8092e36ec66d;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_input_border_color_hover;text;#c0c0c0;;false;Set the border hover color (and opacity) of text inputs on the login box.
+41c4bf75-4fd8-472b-a427-4f197e03791d;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_input_border_color_focus;text;#c0c0c0;;false;Set the border focus color (and opacity) of text inputs on the login box.
+21897088-7cc2-4ce8-abdf-9b14f9b12320;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_input_border_size;text;1px;;false;Set the border size of text inputs on the login box.
+bd186d94-3746-40aa-b477-2de2b14aea85;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_input_border_radius;text;3px;;false;Set the border radius of text inputs on the login box.
+daed9de7-5c40-49e2-a569-8ef2a4a1ab53;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_input_shadow_inner_color_focus;text;#ffffff;;false;Set the inner focus shadow color (and opacity) of text inputs on the login box.
+850eb3bb-3412-4ab8-860a-1de27bf57ec1;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_input_shadow_outer_color;text;#ffffff;;false;Set the outer shadow color (and opacity) of text inputs on the login box.
+eedf4e2d-a9fc-4237-8971-c7767fce799f;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_input_shadow_outer_color_focus;text;#cddaf0;;false;Set the outer focus shadow color (and opacity) of text inputs on the login box.
+9f1ffa8c-a62d-4b68-9b4e-05b344cc48dc;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_input_text_size;text;12px;;false;Set the size of text input content on the login box.
+9a3c52c9-af22-49a3-a60e-0afba26b0514;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_input_text_font;text;Arial;;false;Set the font of text input content on the login box.
+01dd4b26-0dd8-4495-b6de-13baeec1f562;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_input_text_color;text;#000000;;false;Set the color (and opacity) of text input content on the login box.
+0111e71f-80ef-43b8-9fb9-efc120d15367;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_input_text_placeholder_color;text;#999999;;false;Set the color (and opacity) of input placeholder text on the login box.
+0b1168d1-26d0-4072-b19d-f5cbb6e04a27;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;font_loader;text;true;;false;Enables the dynamic loading of web fonts (requires an Internet connection).
+bcc40447-b7b2-4b47-9b9b-484b86267853;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;font_retrieval;text;asynchronous;;false;Set the retrieval method for the web font loader (default: synchronous).
+79357905-1abd-4e49-b098-8cee5f283317;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;font_source_key;text;"";;false;API key that allows access to the available fonts list.
+817561dd-dfcb-4111-bd68-09f58428d67f;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;body_icon_color;text;"rgba(255,255,255,0.25)";;false;Set the color (and opacity) for the icons in the body.
+fe006fb1-b3ec-451f-9cfb-8ac5473837ac;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;body_icon_color_hover;text;"rgba(255,255,255,0.50)";;false;Set the hover color (and opacity) for the icons in the body.
+e34b276a-1b64-4d11-9470-ae3ea977c47e;214b9f02-547b-d49d-f4e9-02987d9581c5;adminer;auto_login;boolean;true;;true;"Set whether to auto-login to Adminer, or require a username and password."
+6aba55ae-ced9-4853-81d0-33667be763e5;24108154-4ac3-1db6-1551-4731703a4440;fax;cover_font;text;times;;false;Font used to generate cover page. Can be full path to .ttf file or font name alredy installed.
+549f8854-2377-448f-892c-58a85ac83a56;24108154-4ac3-1db6-1551-4731703a4440;fax;cover_footer;text;"The information contained in this facsimile is intended for the sole confidential use of the recipient(s) designated above, and may contain confidential and legally privileged information. If you are not the intended recipient, you are hereby notified that the review, disclosure, dissemination, distribution, copying, duplication in any form, and taking of any action in regards to the contents of this document - except with respect to its direct delivery to the intended recipient - is strictly prohibited.  Please notify the sender immediately and destroy this cover sheet and all attachments.  If stored or viewed electronically, please permanently delete it from your system.";;true;Notice displayed in the footer of the cover sheet.
+87895c98-10a1-44db-a6cc-db7ae0eb70d1;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_dns_mode;text;1;;false;"DNS Mode 0=A; 1=SRV; 2=NAPTR/SRV;"
+1d1d4b7c-2cd2-474b-8cdf-8f5b8842a9e5;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_firmware_path;text;mydomain.com/app/provision;;true;Grandstream firmware and provision.
+2d820643-b2ad-4824-946e-540d800ebd82;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_ldap_display_name;text;givenName sn title;;false;Which named attributes to display on device.  Must be pulled in through grandstream_ldap_name_attr.
+66c37aae-8381-460d-bac3-d08fea5d3217;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_phonebook_xml_server_path;text;mydomain.com/app/provision/pb/;;true;Grandstream Phonebook Server Path - NOTE template adds MAC on the end of this if contact_grandstream is enabled.  This also requires nginx rewrite rules for phonebook.xml
+1cbf0a48-9e4f-4af6-8d91-8ebff8ba27ec;24ab69bf-c78b-4ab3-9911-cf30247e3e46;provision;grandstream_screensaver_xml_download_interval;text;0;;false;Screensaver XML Download Interval Number: 5 - 720. Default is 0 (disable auto downloading)
+098b2abd-3af3-4104-8fba-fabf9573f925;d4ab90f0-eeeb-454a-af1e-a6e970f31147;provision;polycom_digitmap;text;[*]xxxx|[2-9]11|0T|011xxx.T|[0-1][2-9]xxxxxxxxx|[2-9]xxxxxxxxx|[1-9]xxT|**x.T;;false;""
+559cd2d6-8ca0-4e6e-ae9d-565c8eed898d;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;voicemail_number;text;*97;;true;""
+5bc38b86-089f-44cb-9fff-38be38c497e8;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;line_register_expires;numeric;120;;true;""
+f8e7b78b-1b84-42da-9e14-ec03dbb67c52;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;daylight_savings_stop_month;text;11;;true;""
+8854358d-c6a4-4eeb-b21b-37ced80a4fbb;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;contact_extensions;boolean;true;;false;allow extensions to be provisioned as contacts as  in provision templates
+8311d0c9-73ae-4d49-9036-e2f649586b5b;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;spa_insert_via_rport;text;Yes;;true;""
+72de5cdf-31f8-4d4b-b94b-468be0aa7a3d;abf28ead-92ef-3de6-ebbb-023fbc2b6dd3;provision;spa_dial_plan;text;(*xxxxxxx|*xxxxxx|*xxxxx|*xxxx|*xxx|*xx*|*x|**xxxxx|**xxxx|**xxx|**xx|[3469]11|0|00|[2-9]xxxxxx|1xxx[2-9]xxxxxxS0|xxxxxxxxxxxx.);;true;""
+745d8fdc-57bc-4f43-97d7-508fda8f70a8;1d61fb65-1eec-bc73-a6ee-a6203b4fe6f2;ring_group;destination_add_rows;numeric;5;;true;""
+c8cbb0eb-850b-4afd-a918-cceaf8af3957;4b821450-926b-175a-af93-a03c441818b1;time_conditions;region;text;usa;;true;What region to use by default when choosing Time Conditions
+3ddfd3b3-5c2e-45ef-b3ca-7f361ecc0a93;4b821450-926b-175a-af93-a03c441818b1;time_conditions;preset_england;array;"{""boxing_day"":{""mday"":""26"",""mon"":""12""}}";;true;England Holiday
+7a12b17c-67d9-439e-98fb-70039d27cf21;4b821450-926b-175a-af93-a03c441818b1;time_conditions;preset_usa;array;"{""martin_luther_king_jr_day"":{""wday"":""2"",""mon"":""1"",""mday"":""15-21""}}";;true;USA Holiday
+340856f4-ed1d-42ec-b13b-7f37630d019a;4b821450-926b-175a-af93-a03c441818b1;time_conditions;preset_canada;array;"{""new_years_day"":{""mday"":""1"",""mon"":""1""}}";;true;Canada Holiday
+a96c087a-503c-4b7c-87af-dff24d5d39c1;4b821450-926b-175a-af93-a03c441818b1;time_conditions;preset_canada;array;"{""boxing_day"":{""mday"":""26"",""mon"":""12""}}";;true;Canada Holiday
+dd09f9d8-6662-4270-9dac-b87191b77012;b523c2d2-64cd-46f1-9520-ca4b4098e044;voicemail;display_domain_name;boolean;true;;false;Enable display of @domain_name after voicemail_id when rendering emails.
+cdb19dda-234b-407a-9eda-e8af74597d4b;4a085c51-7635-ff03-f67b-86e834422848;cdr;limit;numeric;800;;true;""
+fc2fa8cd-b14e-48e3-99bd-7c01c9d6208d;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_time_zone;text;-5;;false;Time zone ranges from -11 to +12
+d0fb35a5-b5cb-4d9c-9554-56c5087d74ec;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_subscribe_mwi_to_vm;boolean;1;;true;"subscribe to the voicemail MWI 0-Disabled (default), 1-Enabled"
+561035ed-e388-4d5e-888d-367455faa05c;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_direct_ip_call_enable;numeric;0;;false;"(0-Disabled;1-Enabled)"
+ada36bd5-51ab-4bf8-a2ad-bc39671b2a3a;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_missed_call_power_led_flash_enable;numeric;0;;false;"(0-Disabled:power indicator LED is off;1-Enabled:power indicator LED is solid red)"
+75850968-9226-450f-a3e1-414ec1d610ee;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_firmware_t38g;text;t38g-38.70.0.185.rom;;true;Filename of the T38G firmware ROM
+0276b965-0ef6-493a-bdd0-b9786bf8aad7;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_firmware_t48g;text;t48g-35.81.0.110.rom;;true;Filename of the T48G firmware ROM
+a39fc1af-9c30-46c7-a564-212e4af0331f;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_firmware_vp530;text;vp530-23.70.0.40.rom;;true;Filename of the VP530 firmware ROM
+3dee932a-6987-4693-b289-825d192e8f85;82626eb7-f2dd-4c25-bd0f-06235222ce76;provision;yealink_feature_key_sync;numeric;0;;true;"Enable or disable the feature key synchronization; 0-Disabled (default) 1-Enabled"
+48874632-421d-4829-a6b7-0695c589d85f;2c2453c0-1bea-4475-9f44-4d969650de09;domain;paging;numeric;100;;true;Set the maximum number of records displayed per page. (Default: 50)
+4209ff1f-6ea8-4b77-81be-bd75e8670785;2c2453c0-1bea-4475-9f44-4d969650de09;security;password_special;boolean;true;;false;Set whether to require at least one special character in passwords.
+718b1641-fa3c-4861-b1f3-40635c951888;2c2453c0-1bea-4475-9f44-4d969650de09;security;password_strength;numeric;4;;true;"Set the default strength for generated passwords. Valid Options: 1 - Numeric Only, 2 - Include Lower Apha, 3 - Include Upper Alpha, 4 - Include Special Characters."
+08095792-7fa7-4d6d-9fc4-d1ba8b4f80b7;2c2453c0-1bea-4475-9f44-4d969650de09;dashboard;admin;array;limits;;false;Enable Dashboard Domain Limits block for users in the admin group.
+b15264cf-9200-458f-a71a-5967ee7118a7;2c2453c0-1bea-4475-9f44-4d969650de09;dashboard;superadmin;array;limits;;false;Enable Dashboard Domain Limits block for users in the superadmin group.
+8f74f69b-58f1-4040-9d4e-e949d384a915;2c2453c0-1bea-4475-9f44-4d969650de09;dashboard;user;array;call_routing;;true;Enable Dashboard Call Routing controls for users in the users group.
+f0e601b9-b619-4247-9624-c33605e96fd8;112124b3-95c2-5352-7e9d-d14c0b88f207;user;password_lowercase;boolean;true;;true;Set whether to require at least one lowecase letter in user passwords.
+1affbed5-383e-4562-8c17-d9b534328649;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;logout_icon_color;text;#ffffff;;false;Set the color (and opacity) for the logout icon (if visible).
+00cc9b63-f53e-4dc4-9211-7136ad6a4beb;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;menu_main_toggle_color_hover;text;#69e5ff;;false;Set the hover color (and opacity) for the menu toggle icon (in mobile view).
+d2133297-c72b-40db-a85e-54bd13060433;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;message_alert_background_color;text;#ffe585;;true;Set the background color for the alert message bar.
+5a401784-b930-46e7-8fb0-6fa0b5a8806e;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;domain_selector_shadow_color;text;#888888;;true;Set the shadow color (and opacity) of the domain selector pane.
+13f4a3d3-7ffe-4422-856c-5f2049234740;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;menu_main_border_radius;text;0 0 4px 4px;;false;Set the border radius of the main menu.
+f0aa1b8a-1be3-46f3-adfc-d4bb646b9ef9;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;menu_sub_shadow_color;text;#000000;;true;Set the shadow color (and opacity) of sub menus.
+92034d4d-175f-46f7-83fc-26b11de22029;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;heading_text_size;text;15px;;false;Set the size of the page heading text.
+daaf00f2-3320-4252-b350-60a68ffbe4b7;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;body_text_size;text;12px;;false;Set the size of the body text.
+4da99715-172e-4eea-ac64-0d03452b9060;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;body_text_color;text;#5f5f5f;;false;Set the color (and opacity) of the body text.
+40de77a7-5b64-40a6-b952-76da52cdb565;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;table_heading_background_color;text;#ffffff;;false;Set the background color (and opacity) of table header rows.
+3b46602c-c736-43ec-a4b5-c733110dbe57;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_border_color;text;#dbe0ea;;false;Set the border color (and opacity) of the Dashboard blocks.
+759391b7-8af9-4661-a676-867e01e8f21f;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_heading_text_font;text;"Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif";;false;Set the font of the Dashboard block heading text.
+abb6df7f-bbb2-4a10-a6ad-0bfa7363a7af;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_number_title_text_font;text;"Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif";;false;Set the font of the Dashboard block number title.
+bfa4ce71-b780-4fed-ad94-181af82761f6;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;dashboard_footer_dots_color_hover;text;#a4aebf;;false;Set the hover color (and opacity) of the Dashboard block footer bar dots.
+ccb93369-2cf0-4d06-9565-c6e4644692a8;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;form_table_label_text_color;text;#000000;;false;Set the text color (and opacity) of the form label.
+3b9ef85f-979b-43f1-a094-4562d5443df8;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;form_table_field_text_size;text;8pt;;false;Set the size of text in the form field cell.
+9c303183-0df3-4d0f-8018-41f0957448e4;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_background_color;array;#144794;;false;"Set a secondary background color of the login page, for a gradient effect."
+af7ef79b-ff20-454a-b43a-adebed98c722;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_link_text_color_hover;text;#5082ca;;false;Set the hover color (and opacity) of text links on the login box.
+8bfb324a-b562-4ea6-a1fe-9fb8138eab63;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;button_text_font;text;"Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif";;false;Set the font of button text.
+2f46e479-c724-469d-bb73-865c07d635d3;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;input_border_color;text;#c0c0c0;;false;Set the border color (and opacity) of text inputs.
+7d45f668-28d4-4af5-87a7-31cc9c405a54;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;input_border_radius;text;3px;;false;Set the border radius of text inputs.
+848fd70e-bbba-4f43-ac5d-897229bb19c8;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;input_text_color;text;#000000;;false;Set the color (and opacity) of text input content.
+0bf57ba9-b12f-4c50-8129-316ff5f136d4;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;login_input_shadow_inner_color;text;#cddaf0;;false;Set the inner shadow color (and opacity) of text inputs on the login box.
+527b18dd-2177-4797-a4e0-ad9c2cdcd527;3a6e3ad5-c7e2-4bdc-9c89-e10047efb953;theme;font_loader_version;text;1.6.16;;false;Set the web font loader version to use - specific (e.g. 1.6.16) or latest in branch (e.g. 1).
+94e33054-f43e-444a-af87-07ba01d52567;;phonebook;auth;text;false;0;true;
