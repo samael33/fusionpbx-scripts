@@ -22,47 +22,48 @@
 //settings
 	$domain_name = '*';
 	$year = '2018';
-	$type = 'wav';  //wav or mp3
+	$ext_type = ['mp3', 'wav'];  //wav or mp3
 	$execute_sql = true;
-        $document_root = '/var/www/fusionpbx';
+    $document_root = '/var/www/fusionpbx';
 
 //web server or command line
-        if(defined('STDIN')) {
-                set_include_path($document_root);
-                $_SERVER["DOCUMENT_ROOT"] = $document_root;
-                $project_path = $_SERVER["DOCUMENT_ROOT"];
-                define('PROJECT_PATH', $project_path);
-                $_SERVER["PROJECT_ROOT"] = realpath($_SERVER["DOCUMENT_ROOT"] . PROJECT_PATH);
-                set_include_path(get_include_path() . PATH_SEPARATOR . $_SERVER["PROJECT_ROOT"]);
-                require_once "resources/require.php";
-                $display_type = 'text'; //html, text
-        }
-	else {
+	if(defined('STDIN')) {
+			set_include_path($document_root);
+			$_SERVER["DOCUMENT_ROOT"] = $document_root;
+			$project_path = $_SERVER["DOCUMENT_ROOT"];
+			define('PROJECT_PATH', $project_path);
+			$_SERVER["PROJECT_ROOT"] = realpath($_SERVER["DOCUMENT_ROOT"] . PROJECT_PATH);
+			set_include_path(get_include_path() . PATH_SEPARATOR . $_SERVER["PROJECT_ROOT"]);
+			require_once "resources/require.php";
+			$display_type = 'text'; //html, text
+	} else {
 		include "root.php";
 		require_once "resources/require.php";
 		require_once "resources/pdo.php";
 	}
 
 //get the uuid recordings and update the information in the database
-	$recordings = glob($_SESSION['switch']['recordings']['dir'].'/'.$domain_name.'/archive/'.$year.'/*/*/*.'.$type);
-	foreach($recordings as $path) {
-		//get the details from the path
-		$parts = pathinfo($path);
-		$record_path = $parts['dirname'];
-		$record_name = $parts['basename'];
-		$uuid = $parts['filename'];
-		$extension = $parts['extension'];
+	foreach ($ext_type as $type) {
+		$recordings = glob($_SESSION['switch']['recordings']['dir'].'/'.$domain_name.'/archive/'.$year.'/*/*/*.'.$type);
+		foreach($recordings as $path) {
+			//get the details from the path
+			$parts = pathinfo($path);
+			$record_path = $parts['dirname'];
+			$record_name = $parts['basename'];
+			$uuid = $parts['filename'];
+			$extension = $parts['extension'];
 
-		//update the database
-		if (is_uuid($uuid)) {
-			$sql = "update v_xml_cdr set ";
-			$sql .= "record_path = '".$record_path."', ";
-			$sql .= "record_name = '".$record_name."' ";
-			$sql .= "where uuid = '".$uuid."';\n";
-			if ($execute_sql) { 
-				$db->exec($sql); 
+			//update the database
+			if (is_uuid($uuid)) {
+				$sql = "update v_xml_cdr set ";
+				$sql .= "record_path = '".$record_path."', ";
+				$sql .= "record_name = '".$record_name."' ";
+				$sql .= "where uuid = '".$uuid."';\n";
+				if ($execute_sql) { 
+					$db->exec($sql); 
+				}
+				echo $sql."\n";
 			}
-			echo $sql."\n";
 		}
 	}
 
