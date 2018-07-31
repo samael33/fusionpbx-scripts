@@ -7,21 +7,21 @@ $dialplans_to_delete = ['user_exists', 'user_record', 'call_forward_all', 'local
 function remove_dialplan_details($db, $dialplan_uuid) {
     $sql = "DELETE FROM v_dialplan_details ";
     $sql .= "WHERE dialplan_uuid = '".$dialplan_uuid."' ";
-    //$db->exec($sql);
-    print($sql."\n");
+    $db->exec($sql);
+    //print($sql."\n");
 }
 function remove_dialplan($db, $dialplan_uuid) {
     $sql = "DELETE FROM v_dialplans ";
     $sql .= "WHERE dialplan_uuid = '".$dialplan_uuid."' ";
-    //$db->exec($sql);
-    print($sql."\n");
+    $db->exec($sql);
+    //print($sql."\n");
 }
 function check_name($db, $dialplan_uuid) {
     $sql = "SELECT dialplan_name FROM v_dialplans";
     $sql .= " WHERE dialplan_uuid = '$dialplan_uuid'";
     $prep_statement = $db->prepare($sql);
 	$prep_statement->execute();
-    var_dump($prep_statement->fetchAll());
+    //var_dump($prep_statement->fetchAll());
 }
 
 
@@ -48,9 +48,9 @@ foreach ($dialplans_to_delete as $dialplan_name) {
 	$prep_statement->execute();
     $uuid_list = $prep_statement->fetchAll();
     foreach ($uuid_list as $uuid) {
-        check_name($db, $uuid['dialplan_uuid']);
-        //remove_dialplan_details($db, $uuid['dialplan_uuid']);
-        //remove_dialplan($db, $uuid['dialplan_uuid']);
+        //check_name($db, $uuid['dialplan_uuid']);
+        remove_dialplan_details($db, $uuid['dialplan_uuid']);
+        remove_dialplan($db, $uuid['dialplan_uuid']);
     }
 }
 
