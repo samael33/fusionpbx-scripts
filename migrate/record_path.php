@@ -22,7 +22,7 @@
 //settings
 	$domain_name = '*';
 	$year = '2018';
-	$ext_type = ['mp3', 'wav'];  //wav or mp3
+	$ext_type = ['mp3', 'wav'];  //wav and mp3
 	$execute_sql = true;
     $document_root = '/var/www/fusionpbx';
 
