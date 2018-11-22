@@ -58,7 +58,7 @@
 				$sql = "update v_xml_cdr set ";
 				$sql .= "record_path = '".$record_path."', ";
 				$sql .= "record_name = '".$record_name."' ";
-				$sql .= "where uuid = '".$uuid."';\n";
+				$sql .= "where xml_cdr_uuid = '".$uuid."';\n";
 				if ($execute_sql) { 
 					$db->exec($sql); 
 				}
