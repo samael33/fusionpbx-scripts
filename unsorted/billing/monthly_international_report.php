@@ -72,7 +72,7 @@ fclose($country_codes_file);
 
 // 1
 
-$sql = "SELECT domain_uuid, domain_name FROM v_domains";
+$sql = "SELECT domain_uuid, domain_name FROM v_domains WHERE domain_enabled = 'true'";
 
 $prep_statement = $db->prepare(check_sql($sql));
 $prep_statement->execute();
@@ -102,6 +102,8 @@ foreach ($domain_list as $domain) {
 		continue;
 	}
 	$client_tech_prefix = $client_tech_prefix[0]['dialplan_detail_data'];
+	$client_tech_prefix = explode("=", $client_tech_prefix)[1];
+	
 	echo "Domain: " . $domain['domain_name'] . " -> " . $client_tech_prefix . "\n";
 }
 
