@@ -93,16 +93,16 @@ foreach ($domain_list as $domain) {
 	// 2.1
 	$sql = "SELECT dialplan_detail_data FROM v_dialplan_details WHERE dialplan_uuid = (";
 	$sql .= "SELECT dialplan_uuid from v_dialplans where domain_uuid = '" . $domain['domain_uuid'] . "' AND dialplan_name = 'variables'";
-	$sql .= ")";
+	$sql .= ") AND dialplan_detail_data LIKE 'client_tech_prefix=%'";
 	$prep_statement = $db->prepare(check_sql($sql));
 	$prep_statement->execute();
 	$client_tech_prefix = $prep_statement->fetchAll();
 	if (count($client_tech_prefix) != 1) {
-		echo "Domain " . $domain['domain_name'] . " cannot be processed, count:" . count($client_tech_prefix);
+		echo "Domain " . $domain['domain_name'] . " cannot be processed, count:" . count($client_tech_prefix) . "\n";
 		continue;
 	}
 	$client_tech_prefix = $client_tech_prefix[0]['dialplan_detail_data'];
-	echo "Domain: " . $domain['domain_name'] . " -> " . $client_tech_prefix;
+	echo "Domain: " . $domain['domain_name'] . " -> " . $client_tech_prefix . "\n";
 }
 
 // End 2
