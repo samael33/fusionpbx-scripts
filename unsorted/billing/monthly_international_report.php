@@ -52,6 +52,8 @@ if(defined('STDIN')) {
 3. Print / Email results
 */
 
+// 0
+
 $country_codes = array();
 
 $country_codes_file = fopen("AllCountryCodes.csv", "r");
@@ -66,5 +68,43 @@ while (($line = fgets($country_codes_file)) !== false) {
 }
 fclose($country_codes_file);
 
+// End 0
+
+// 1
+
+$sql = "SELECT domain_uuid, domain_name FROM v_domains";
+
+$prep_statement = $db->prepare(check_sql($sql));
+$prep_statement->execute();
+$domain_list = $prep_statement->fetchAll();
+unset ($prep_statement, $sql);
+
+// End 1
+
+/*
+select domain_name, domain_uuid from v_domains
+select dialplan_uuid from v_dialplans where domain_uuid = '01105399-feb1-4842-b1bb-6e304d2c6dfc' and dialplan_name = 'variables
+select dialplan_detail_data from v_dialplan_details where dialplan_uuid = '79764fc7-cd9a-4086-89c9-8eb8db59374b' and dialplan_detail_data like 'client_tech_prefix=%'
+*/
+
+// 2
+
+foreach ($domain_list as $domain) {
+	// 2.1
+	$sql = "SELECT dialplan_detail_data FROM v_dialplan_details WHERE dialplan_uuid = (";
+	$sql .= "SELECT dialplan_uuid from v_dialplans where domain_uuid = '" . $domain['domain_uuid'] . "' AND dialplan_name = 'variables'";
+	$sql .= ")";
+	$prep_statement = $db->prepare(check_sql($sql));
+	$prep_statement->execute();
+	$client_tech_prefix = $prep_statement->fetchAll();
+	if (count($client_tech_prefix) != 1) {
+		echo "Domain " . $domain['domain_name'] . " cannot be processed, count:" . count($client_tech_prefix);
+		continue;
+	}
+	$client_tech_prefix = $client_tech_prefix[0]['dialplan_detail_data'];
+	echo "Domain: " . $domain['domain_name'] . " -> " . $client_tech_prefix;
+}
+
+// End 2
 
 ?>
