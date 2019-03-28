@@ -89,8 +89,9 @@ select dialplan_detail_data from v_dialplan_details where dialplan_uuid = '79764
 
 // 2
 
-foreach ($domain_list as $domain) {
-	// 2.1
+// 2.1
+foreach ($domain_list as $k => $domain) {
+
 	$sql = "SELECT dialplan_detail_data FROM v_dialplan_details WHERE dialplan_uuid = (";
 	$sql .= "SELECT dialplan_uuid from v_dialplans where domain_uuid = '" . $domain['domain_uuid'] . "' AND dialplan_name = 'variables'";
 	$sql .= ") AND dialplan_detail_data LIKE 'client_tech_prefix=%'";
@@ -98,14 +99,17 @@ foreach ($domain_list as $domain) {
 	$prep_statement->execute();
 	$client_tech_prefix = $prep_statement->fetchAll();
 	if (count($client_tech_prefix) != 1) {
-		echo "Domain " . $domain['domain_name'] . " cannot be processed, count:" . count($client_tech_prefix) . "\n";
+		$domain_list[$k]['client_tech_prefix'] = "";
 		continue;
 	}
 	$client_tech_prefix = $client_tech_prefix[0]['dialplan_detail_data'];
 	$client_tech_prefix = explode("=", $client_tech_prefix)[1];
-	
-	echo "Domain: " . $domain['domain_name'] . " -> " . $client_tech_prefix . "\n";
+
+	$domain_list[$k]['client_tech_prefix'] = $client_tech_prefix;
 }
+// End 2.1
+
+var_dump($domain_list);
 
 // End 2
 
