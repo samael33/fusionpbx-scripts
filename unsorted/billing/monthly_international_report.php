@@ -20,8 +20,8 @@
 */
 // Settings
 $document_root = '/var/www/fusionpbx';
-$start_date = mktime(0, 0, 0, date("n"), 1); // First day of the month
-$end_date = mktime(23, 59, 59, date("n"), date("t")); // Last day of the month
+$start_date = mktime(0, 0, 0, date("n") - 1, 1); // First day of previous month
+$end_date = mktime(23, 59, 59, date("n"), 0); // Last day of previous month
 
 function get_correct_time($time, $init_inc = 6, $inc = 6) {
 	if ($time <= 0) {
