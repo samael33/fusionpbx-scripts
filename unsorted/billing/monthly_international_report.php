@@ -156,11 +156,19 @@ foreach ($domain_list as $k => $domain) {
 		if (substr($destination_number, 0, 4) == $domain['client_tech_prefix']) {
 			$destination_number = substr($destination_number, 4);
 		}
+
+		// Skip accident internal numbers
+		if (strlen ($destination_number) <= 4) {
+			continue;
+		}
+
 		// Normalize to E.164
 		if (substr($destination_number, 0, 3) == '011') {
 			$destination_number = substr($destination_number, 3);
 		} else if (substr($destination_number, 0, 3) == '00') {
 			$destination_number = substr($destination_number, 2);
+		} else if ($destination_number[0] == '+') {
+			$destination_number = substr($destination_number, 1);
 		} else if ($destination_number[0] != '1') {
 			$destination_number = '1' . $destination_number;
 		}
