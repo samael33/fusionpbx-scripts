@@ -156,6 +156,16 @@ foreach ($domain_list as $k => $domain) {
 		if (substr($destination_number, 0, 4) == $domain['client_tech_prefix']) {
 			$destination_number = substr($destination_number, 4);
 		}
+		// Normalize to E.164
+		if (substr($destination_number, 0, 3) == '011') {
+			$destination_number = substr($destination_number, 3);
+		} else if (substr($destination_number, 0, 3) == '00') {
+			$destination_number = substr($destination_number, 2);
+		} else if ($destination_number[0] != '1') {
+			$destination_number = '1' . $destination_number;
+		}
+
+
 		$billsec = get_correct_time($billsec);
 
 		echo "Processing call to " . $destination_number . " with duration " . $billsec . "\n";
@@ -171,7 +181,7 @@ foreach ($domain_list as $k => $domain) {
 				} else {
 					$domain_list[$k]['call_list'][$checked_country_code] = array(
 						'billsec' => $billsec,
-						'country' => $country_codes[$checked_country_code],
+						'country' => trim($country_codes[$checked_country_code]),
 						'num_calls' => 1,
 					);
 				}
