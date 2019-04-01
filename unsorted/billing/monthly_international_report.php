@@ -198,9 +198,16 @@ foreach ($domain_list as $k => $domain) {
 // Print results
 
 foreach ($domain_list as $k => $domain) {
-	if (isset($domain['call_list']['num_calls'])) {
-		var_dump($domain);
+	echo "------------------------------------------------\nDomain " . $domain['domain_name'] . "\n";
+	if (count($domain['call_list']) > 0 ) {
+		foreach ($domain['call_list'] as $country_code => $call_details) {
+			echo "   Calls to " . $country_code . "\n";
+			echo "         Destination: " . $call_details['country'] . "\n";
+			echo "         Total duration: " . $call_details['billsec'] . "\n";
+			echo "         Call number: " . $call_details['num_calls'] . "\n";
+		}
 	}
 }
+echo "------------------------------------------------\n";
 
 ?>
