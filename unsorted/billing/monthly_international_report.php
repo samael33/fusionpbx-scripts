@@ -182,6 +182,7 @@ foreach ($domain_list as $k => $domain) {
 
 			// 123456 -> 12345
 			$checked_country_code = substr($destination_number, 0, -$i);
+			echo "Testing $checked_country_code \n";
 			if (array_key_exists($checked_country_code, $country_codes)) {
 				if (isset($domain_list[$k]['call_list'][$checked_country_code])) {
 					$domain_list[$k]['call_list'][$checked_country_code]['billsec'] += $billsec;
@@ -193,6 +194,7 @@ foreach ($domain_list as $k => $domain) {
 						'num_calls' => 1,
 					);
 				}
+				echo "Found $checked_country_code => " . trim($country_codes[$checked_country_code]) . "\n";
 				break;
 			}
 		}
