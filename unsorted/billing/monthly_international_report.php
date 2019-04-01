@@ -158,10 +158,12 @@ foreach ($domain_list as $k => $domain) {
 			if (array_key_exists($checked_country_code, $country_codes)) {
 				if (isset($domain_list[$k]['call_list'][$checked_country_code])) {
 					$domain_list[$k]['call_list'][$checked_country_code]['billsec'] += $billsec;
+					$domain_list[$k]['call_list'][$checked_country_code]['num_calls'] += 1;
 				} else {
 					$domain_list[$k]['call_list'][$checked_country_code] = array(
 						'billsec' => $billsec,
 						'country' => $country_codes[$checked_country_code],
+						'num_calls' => 1,
 					);
 				}
 				break;
