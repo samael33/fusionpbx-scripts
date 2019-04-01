@@ -191,10 +191,16 @@ foreach ($domain_list as $k => $domain) {
 	}
 }
 
-var_dump($domain_list);
-
 // End 2.2
 
 // End 2
+
+// Print results
+
+foreach ($domain_list as $k => $domain) {
+	if (isset($domain['call_list']['num_calls'])) {
+		var_dump($domain);
+	}
+}
 
 ?>
