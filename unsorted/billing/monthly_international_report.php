@@ -83,6 +83,8 @@ while (($line = fgets($country_codes_file)) !== false) {
 }
 fclose($country_codes_file);
 
+echo "End processing codes....\n";
+
 // End 0
 
 // 1
@@ -93,6 +95,8 @@ $prep_statement = $db->prepare(check_sql($sql));
 $prep_statement->execute();
 $domain_list = $prep_statement->fetchAll();
 unset ($prep_statement, $sql);
+
+echo "End processing domain_list..\n";
 
 // End 1
 
@@ -122,6 +126,8 @@ foreach ($domain_list as $k => $domain) {
 
 	$domain_list[$k]['client_tech_prefix'] = $client_tech_prefix;
 }
+
+echo "End adding client_tech_prefix to domain_list...\n";
 // End 2.1
 
 // 2.2
@@ -131,6 +137,8 @@ select destination_number, billsec from v_xml_cdr where direction = 'outbound' a
 */
 
 foreach ($domain_list as $k => $domain) {
+
+	echo "Processing domain " . $domain['domain_name'] . "\n";
 
 	$domain_list[$k]['call_list'] = array();
 
@@ -148,8 +156,9 @@ foreach ($domain_list as $k => $domain) {
 		if (substr($destination_number, 0, 4) == $domain['client_tech_prefix']) {
 			$destination_number = substr($destination_number, 4);
 		}
-
 		$billsec = get_correct_time($billsec);
+
+		echo "Processing call to " . $destination_number . " with duration " . $billsec . "\n";
 
 		for ($i == 0; $i <= strlen($destination_number); $i++) {
 
