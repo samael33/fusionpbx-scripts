@@ -23,6 +23,21 @@ $document_root = '/var/www/fusionpbx';
 $start_date = mktime(0, 0, 0, date("n"), 1); // First day of the month
 $end_date = mktime(23, 59, 59, date("n"), date("t")); // Last day of the month
 
+function get_correct_time($time, $init_inc = 6, $inc = 6) {
+	if ($time <= 0) {
+		return 0;
+	}
+	if ($time <= $init_inc) {
+		return $init_inc;
+	}
+	$time_corrected = $time - $init_inc;
+	$extra_add = ($time_corrected % $inc == 0) ? 0 : 1;
+	
+	$time_corrected = $init_inc + (floor($time_corrected / $inc) + $extra_add) * $inc;
+	return $time_corrected;
+}
+
+
 //web server or command line
 if(defined('STDIN')) {
         set_include_path($document_root);
@@ -109,7 +124,55 @@ foreach ($domain_list as $k => $domain) {
 }
 // End 2.1
 
+// 2.2
+
+/*
+select destination_number, billsec from v_xml_cdr where direction = 'outbound' and domain_uuid = 'c15afc7f-c677-4d29-9fdb-c7b4621f0e05' and billsec > 0 and start_epoch
+*/
+
+foreach ($domain_list as $k => $domain) {
+
+	$domain_list[$k]['call_list'] = array();
+
+	$sql = "SELECT destination_number, billsec FROM v_xml_cdr WHERE";
+	$sql .= " domain_uuid = '" . $domain['domain_uuid'] . "' AND direction = 'outbound'";
+	$sql .= " AND billsec > 0 AND start_epoch > " . $start_date . " AND start_epoch < " . $end_date;
+	$prep_statement = $db->prepare(check_sql($sql));
+	$prep_statement->execute();
+	while (($cdr_line = $prep_statement->fetch(PDO::FETCH_ASSOC)) !== false) {
+
+		// First - cleanup from tech prefix
+		$destination_number = $cdr_line['destination_number'];
+		$billsec = $cdr_line['billsec'];
+
+		if (substr($destination_number, 0, 4) == $domain['client_tech_prefix']) {
+			$destination_number = substr($destination_number, 4);
+		}
+
+		$billsec = get_correct_time($billsec);
+
+		for ($i == 0; $i <= strlen($destination_number); $i++) {
+
+			// 123456 -> 12345
+			$checked_country_code = substr($destination_number, 0, -$i);
+			if (array_key_exists($checked_country_code, $country_codes)) {
+				if (isset($domain_list[$k]['call_list'][$checked_country_code])) {
+					$domain_list[$k]['call_list'][$checked_country_code]['billsec'] += $billsec;
+				} else {
+					$domain_list[$k]['call_list'][$checked_country_code] = array(
+						'billsec' => $billsec,
+						'country' => $country_codes[$checked_country_code],
+					);
+				}
+				break;
+			}
+		}
+	}
+}
+
 var_dump($domain_list);
+
+// End 2.2
 
 // End 2
 
