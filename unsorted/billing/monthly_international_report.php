@@ -145,7 +145,7 @@ foreach ($domain_list as $k => $domain) {
 
 	$domain_list[$k]['call_list'] = array();
 
-	$sql = "SELECT destination_number, billsec FROM v_xml_cdr WHERE";
+	$sql = "SELECT caller_destination, billsec FROM v_xml_cdr WHERE";
 	$sql .= " domain_uuid = '" . $domain['domain_uuid'] . "' AND direction = 'outbound'";
 	$sql .= " AND billsec > 0 AND start_epoch > " . $start_date . " AND start_epoch < " . $end_date;
 	$prep_statement = $db->prepare(check_sql($sql));
