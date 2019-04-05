@@ -23,7 +23,7 @@ $document_root = '/var/www/fusionpbx';
 $start_date = mktime(0, 0, 0, date("n") - 1, 1); // First day of previous month
 $end_date = mktime(23, 59, 59, date("n"), 0); // Last day of previous month
 
-function get_correct_time($time, $init_inc = 6, $inc = 6) {
+function get_correct_time($time, $init_inc = 30, $inc = 6) {
 	if ($time <= 0) {
 		return 0;
 	}
@@ -71,15 +71,18 @@ if(defined('STDIN')) {
 
 $country_codes = array();
 
-$country_codes_file = fopen("AllCountryCodes.csv", "r");
+$country_codes_file = fopen("rework_all_codes.csv", "r");
 
 if (!$country_codes_file) {
-	die('Cannot open AllCountryCodes file');
+	die('Cannot open rework_all_codes file');
 }
 
 while (($line = fgets($country_codes_file)) !== false) {
-	list($code, $country) = explode(',', $line);
-	$country_codes[$code] = $country;
+	list($code, $country, $rate) = explode(',', $line);
+	$country_codes[$code] = array(
+		'country' => $country,
+		'rate' => $rate,
+	);
 }
 fclose($country_codes_file);
 
@@ -183,16 +186,29 @@ foreach ($domain_list as $k => $domain) {
 			// 123456 -> 12345
 			$checked_country_code = substr($destination_number, 0, -$i);
 			if (array_key_exists($checked_country_code, $country_codes)) {
-				if (isset($domain_list[$k]['call_list'][$checked_country_code])) {
-					$domain_list[$k]['call_list'][$checked_country_code]['billsec'] += $billsec;
-					$domain_list[$k]['call_list'][$checked_country_code]['num_calls'] += 1;
-				} else {
-					$domain_list[$k]['call_list'][$checked_country_code] = array(
-						'billsec' => $billsec,
-						'country' => trim($country_codes[$checked_country_code]),
+
+				// We found our code to dial.
+
+				$dialed_code = $checked_country_code;
+				$dialed_country = isset($country_codes[$dialed_code]['country']) ? $country_codes[$dialed_code]['country'] : "NA";
+				$dialed_rate = isset($country_codes[$dialed_code]['rate']) ? $country_codes[$dialed_code]['rate'] : 0;
+
+				$call_price = round(($dialed_rate / 60 * $billsec), 4);
+
+				if (!isset($domain_list[$k]['call_list'][$dialed_country])) {
+					// Add new dialed country do dial list
+					$domain_list[$k]['call_list'][$dialed_country] = array(
+						"cost" => $call_price,
 						'num_calls' => 1,
+						'billsec' => $billsec,
 					);
+				} else {
+					// Append to existing data
+					$domain_list[$k]['call_list'][$dialed_country]['cost'] += $call_price;
+					$domain_list[$k]['call_list'][$dialed_country]['num_calls'] += 1;
+					$domain_list[$k]['call_list'][$dialed_country]['billsec'] += $billsec;
 				}
+
 				break;
 			}
 		}
@@ -208,11 +224,11 @@ foreach ($domain_list as $k => $domain) {
 foreach ($domain_list as $k => $domain) {
 	echo "------------------------------------------------\nDomain " . $domain['domain_name'] . "\n";
 	if (count($domain['call_list']) > 0 ) {
-		foreach ($domain['call_list'] as $country_code => $call_details) {
-			echo "   Calls to " . $country_code . "\n";
-			echo "         Destination: " . $call_details['country'] . "\n";
+		foreach ($domain['call_list'] as $dialed_country => $call_details) {
+			echo "   Calls to " . $dialed_country . "\n";
 			echo "         Total duration: " . $call_details['billsec'] . "\n";
-			echo "         Call number: " . $call_details['num_calls'] . "\n";
+			echo "         Call number:    " . $call_details['num_calls'] . "\n";
+			echo "         Call Cost:     $" . $call_details['cost'] . "\n";
 		}
 	}
 }
