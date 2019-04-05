@@ -165,6 +165,11 @@ foreach ($domain_list as $k => $domain) {
 			continue;
 		}
 
+		// Fix strange bug
+		if (strlen($destination_number) == 14) {
+			$destination_number = substr($destination_number, 4);
+		}
+
 		// Normalize to E.164
 		if (substr($destination_number, 0, 3) == '011') {
 			$destination_number = substr($destination_number, 3);
