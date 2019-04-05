@@ -153,7 +153,7 @@ foreach ($domain_list as $k => $domain) {
 	while (($cdr_line = $prep_statement->fetch(PDO::FETCH_ASSOC)) !== false) {
 
 		// First - cleanup from tech prefix
-		$destination_number = $cdr_line['destination_number'];
+		$destination_number = $cdr_line['caller_destination'];
 		$billsec = $cdr_line['billsec'];
 
 		if (substr($destination_number, 0, 4) == $domain['client_tech_prefix']) {
