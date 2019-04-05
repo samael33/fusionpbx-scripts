@@ -191,9 +191,9 @@ foreach ($domain_list as $k => $domain) {
 
 				$dialed_code = $checked_country_code;
 				$dialed_country = isset($country_codes[$dialed_code]['country']) ? $country_codes[$dialed_code]['country'] : "NA";
-				$dialed_rate = isset($country_codes[$dialed_code]['rate']) ? $country_codes[$dialed_code]['rate'] : 0;
+				$dialed_rate = isset($country_codes[$dialed_code]['rate']) ? trim($country_codes[$dialed_code]['rate']) : 0;
 
-				$call_price = round(($dialed_rate / 60 * $billsec), 4);
+				$call_price = round(((float)$dialed_rate / 60 * $billsec), 4);
 
 				if (!isset($domain_list[$k]['call_list'][$dialed_country])) {
 					// Add new dialed country do dial list
