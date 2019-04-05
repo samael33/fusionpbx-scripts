@@ -209,7 +209,7 @@ foreach ($domain_list as $k => $domain) {
 					$domain_list[$k]['call_list'][$dialed_country]['billsec'] += $billsec;
 				}
 
-				echo "call to $dialed_country($dialed_code), D: $billsec, R: $dialed_rate, C: $call_price, Total call price for this dest: " .  $domain_list[$k]['call_list'][$dialed_country]['cost'];
+				echo "call to $dialed_country($dialed_code), D: $billsec, R: $dialed_rate, C: $call_price, Total call price for this dest: " .  $domain_list[$k]['call_list'][$dialed_country]['cost'] . "\n";
 
 				break;
 			}
